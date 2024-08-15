@@ -1,0 +1,1163 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<title>Integration via CSV File &#8211; Wiki.Epicflow</title>
+<style type="text/css">.wpfts-result-item .wpfts-smart-excerpt {}.wpfts-result-item .wpfts-smart-excerpt b {font-weight:bold !important;}.wpfts-result-item .wpfts-not-found {color:#808080;font-size:0.9em;}.wpfts-result-item .wpfts-score {color:#006621;font-size:0.9em;}.wpfts-shift {margin-left:40px;}.wpfts-result-item .wpfts-download-link {color:#006621;font-size:0.9em;}.wpfts-result-item .wpfts-file-size {color:#006621;font-size:0.9em;}.wpfts-result-item .wpfts-sentence-link {text-decoration:none;cursor:pointer;color:unset;}.wpfts-result-item .wpfts-sentence-link:hover {text-decoration:underline;color:inherit;}.wpfts-result-item .wpfts-word-link {text-decoration:none;cursor:pointer;}.wpfts-result-item .wpfts-word-link:hover {text-decoration:underline;}wpfts-highlight.wpfts-highlight-sentence {background-color:rgba(255, 255, 128, 0.5) !important;display:inline-block;}wpfts-highlight.wpfts-highlight-word {background-color:rgba(255, 128, 128, 0.5) !important;display:inline-block;}</style><meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" type="application/rss+xml" title="Wiki.Epicflow &raquo; Feed" href="https://wiki-stage.epicflow.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Wiki.Epicflow &raquo; Comments Feed" href="https://wiki-stage.epicflow.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Wiki.Epicflow &raquo; Integration via CSV File Comments Feed" href="https://wiki-stage.epicflow.com/knowledge-base/integration-with-csv-file/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/wiki-stage.epicflow.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/block-library/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio :where(figcaption){color:#ffffffa6}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed :where(figcaption){color:#ffffffa6}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:#ffffffa6}:root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:#ffffffa6}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table :where(figcaption){color:#ffffffa6}.wp-block-video :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video :where(figcaption){color:#ffffffa6}.wp-block-video{margin:0 0 1em}:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<link rel='stylesheet' id='wp-components-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/components/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-preferences-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/preferences/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-editor-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/block-editor/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-reusable-blocks-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/reusable-blocks/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-patterns-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/patterns/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-editor-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/editor/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='htgb-style-css-css' href='https://wiki-stage.epicflow.com/wp-content/plugins/heroic-glossary/dist/blocks.style.build.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ht-blocks-modules-styles-css' href='https://wiki-stage.epicflow.com/wp-content/plugins/heroic-blocks/dist/css/ht-blocks-modules-styles.css?ver=1721715670' type='text/css' media='all' />
+<link rel='stylesheet' id='ht_toc-style-css-css' href='https://wiki-stage.epicflow.com/wp-content/plugins/heroic-table-of-contents/dist/blocks.style.build.css?ver=1721715670' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-gray: #28303D;--wp--preset--color--gray: #39414D;--wp--preset--color--theme-default: #00b4b3;--wp--preset--color--blue: #0069e4;--wp--preset--color--purple: #5749a0;--wp--preset--color--orange: #f0644a;--wp--preset--color--green: #46a162;--wp--preset--color--pale-blue: #7994be;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='wpfts_jquery-ui-styles-css' href='https://wiki-stage.epicflow.com/wp-content/plugins/fulltext-search/style/wpfts_autocomplete.css?ver=1723727438' type='text/css' media='all' />
+<link rel='stylesheet' id='heroic-faq-group-gb-block-frontend-style-css' href='https://wiki-stage.epicflow.com/wp-content/plugins/ht-faq/blocks/v1/heroic-faq-group-gb/style.css?ver=1.3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='UserAccessManagerLoginForm-css' href='https://wiki-stage.epicflow.com/wp-content/plugins/user-access-manager/assets/css/uamLoginForm.css?ver=2.2.23' type='text/css' media='screen' />
+<link rel='stylesheet' id='ht-theme-style-css' href='https://wiki-stage.epicflow.com/wp-content/themes/knowall/css/style.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='ht-childtheme-style-css' href='https://wiki-stage.epicflow.com/wp-content/themes/knowall-child/style.css?ver=6.6.1' type='text/css' media='all' />
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/jquery/ui/menu.min.js?ver=1.13.3" id="jquery-ui-menu-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/dist/a11y.min.js?ver=d90eebea464f6c09bfd5" id="wp-a11y-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.13.3" id="jquery-ui-autocomplete-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/fulltext-search/js/wpfts_frontend.js?ver=1723727438" id="wpfts_frontend-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/wp-image-zoooom/assets/js/jquery.image_zoom.min.js?ver=1.57" id="image_zoooom-js"></script>
+<script type="text/javascript" id="image_zoooom-init-js-extra">
+/* <![CDATA[ */
+var IZ = {"with_woocommerce":"0","exchange_thumbnails":"1","woo_categories":"0","enable_mobile":"","options":[],"woo_slider":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/wp-image-zoooom/assets/js/image_zoom-init.js?ver=1.57" id="image_zoooom-init-js"></script>
+<link rel="https://api.w.org/" href="https://wiki-stage.epicflow.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://wiki-stage.epicflow.com/wp-json/wp/v2/ht-kb/190" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://wiki-stage.epicflow.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.6.1" />
+<link rel="canonical" href="https://wiki-stage.epicflow.com/knowledge-base/integration-with-csv-file/" />
+<link rel='shortlink' href='https://wiki-stage.epicflow.com/?p=190' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://wiki-stage.epicflow.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwiki-stage.epicflow.com%2Fknowledge-base%2Fintegration-with-csv-file%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://wiki-stage.epicflow.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwiki-stage.epicflow.com%2Fknowledge-base%2Fintegration-with-csv-file%2F&#038;format=xml" />
+<script type="text/javascript">
+		document.wpfts_ajaxurl = "https://wiki-stage.epicflow.com/wp-admin/admin-ajax.php";
+	</script><meta name="generator" content="Heroic FAQs v1.3.0" />
+<!-- HKB CSS Variables --><style>:root {--hkb-main-container-width: 1200px;--hkb-link-color: #2358a1;--hkb-link-color-hover: #2861b0;--hkb-header-style-bg: #2358a1;--hkb-header-style-graddir: 90deg;--hkb-header-style-grad1: #2358a1;--hkb-header-style-grad2: #2358a1;--hkb-header-text-color: #ffffff;}</style><meta name="generator" content="Heroic Knowledge Base v3.15.0" />
+<meta name="generator" content="KnowAll Child Theme v1.15.14" />
+<style type="text/css">img.zoooom,.zoooom img{padding:0!important;}</style><script type="text/javascript"></script><link rel="icon" href="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/favicon.png" sizes="32x32" />
+<link rel="icon" href="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/favicon.png" />
+<meta name="msapplication-TileImage" content="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/favicon.png" />
+<style id="kirki-inline-styles">.site-header{background:#00b4b3;}.site-header .site-header__title, .nav-header ul li a{color:#fff;}.nav-header .nav-header__mtoggle span, .nav-header .nav-header__mtoggle span::before, .nav-header .nav-header__mtoggle span::after{background:#fff;}a{color:#00b4b3;}input[type="reset"], input[type="submit"], input[type="button"], .hkb-article__content ol li:before, .hkb-article__content ul li:before, .hkb_widget_exit__btn{background:#00b4b3;}.hkb-breadcrumbs__icon{fill:#00b4b3;}.hkb-article__title a:hover, .hkb-article__link:hover h2, .ht-post__title a:hover, .hkb-category .hkb-category__articlelist a{color:#00b4b3;}.hkb-article-attachment__icon{fill:#00b4b3;}a:hover, .hkb-category .hkb-category__articlelist a:hover{color:#00a8a8;}button:hover, input[type="reset"]:hover, input[type="submit"]:hover, input[type="button"]:hover, .ht-transferbox__btn:hover{background:#00a8a8;}.ht-container{max-width:1000px;}.ht-sitecontainer--boxed{max-width:1000px;}h1, h2, h3, h4, h5, h6{font-family:Roboto;font-weight:700;text-transform:none;color:#333333;}body, input, optgroup, select, textarea, p{font-family:Roboto;font-size:17px;font-weight:400;line-height:1.55;color:#595959;}.hkb-category .hkb-category__iconwrap, .ht-categoryheader .hkb-category__iconwrap{flex-basis:35px;min-width:35px;}.hkb-category .hkb-category__iconwrap img, .ht-categoryheader .hkb-category__iconwrap img{max-width:35px;}.hkb-category .hkb-category__iconwrap img, .ht-categoryheader .hkb-category__iconwrap img, .hkb-category .hkb-category__iconwrap, .ht-categoryheader .hkb-category__iconwrap, .ht-categoryheader .hkb-category__iconwrap svg{max-height:35px;}.nav-header > ul > li.menu-item-has-children > a::after {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34.1 19' fill='%23ffffff'%3E%3Cpath d='M17 19c-0.5 0-1-0.2-1.4-0.6L0.6 3.4c-0.8-0.8-0.8-2 0-2.8 0.8-0.8 2-0.8 2.8 0L17 14.2 30.7 0.6c0.8-0.8 2-0.8 2.8 0 0.8 0.8 0.8 2 0 2.8L18.4 18.4C18 18.8 17.5 19 17 19z'/%3E%3C/svg%3E");}.ht-container, .ht-sitecontainer--boxed { max-width: 1000px }.hkb-category .hkb-category__link { border-bottom: 1px solid #e6e6e6; } .hkb-category.hkb-category--witharticles { border-bottom: 1px solid #e6e6e6; }.hkb_widget_toc ol li.active > a { background: rgba( 0 ,180, 179, 0.8); }/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</style>	</head>
+<body class="ht_kb-template-default single single-ht_kb postid-190 single-format-standard wp-embed-responsive ht-kb" itemscope itemtype="https://schema.org/WebPage" data-spy="scroll" data-offset="30" data-target="#navtoc">
+<div class="ht-sitecontainer ht-sitecontainer--wide">
+
+<!-- .site-header -->
+<div class="site-header">
+
+	<header class="site-header__banner" itemscope itemtype="http://schema.org/WPHeader">
+	<div class="ht-container">
+
+		<!-- .site-logo -->
+		<div class="site-logo">
+			<a href="https://wiki-stage.epicflow.com" data-ht-sitetitle="Wiki.Epicflow">
+													
+		<img alt="Wiki.Epicflow" src="https://wiki-stage.epicflow.com/wp-content/themes/knowall/img/logo.png" />
+
+														<meta itemprop="headline" content="Wiki.Epicflow">
+							</a>
+		</div>
+		<!-- /.site-logo -->
+
+					<!-- .nav-header -->
+			<nav class="nav-header" itemscope itemtype="https://schema.org/SiteNavigationElement">
+				<button id="ht-navtoggle" class="nav-header__mtoggle"><span>Menu</span></button>
+				<ul id="menu-navigation-menu" class="nav-header__menuwrapper"><li id="menu-item-313" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-313"><a href="/">Home</a></li>
+<li id="menu-item-302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-302"><a href="https://wiki-stage.epicflow.com/release-notes/">Release Notes</a></li>
+<li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="https://wiki-stage.epicflow.com/faq/">FAQ</a></li>
+<li id="menu-item-342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-342"><a href="https://wiki-stage.epicflow.com/documentation/">Docs and Media</a>
+<ul class="sub-menu">
+	<li id="menu-item-3020" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3020"><a href="https://wiki-stage.epicflow.com/glossary/">Glossary</a></li>
+	<li id="menu-item-341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-341"><a href="https://wiki-stage.epicflow.com/software-and-hardware-requirements/">Software and Hardware Requirements</a></li>
+	<li id="menu-item-319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-319"><a href="https://wiki-stage.epicflow.com/api-integration/">API &#038; INTEGRATION</a></li>
+	<li id="menu-item-354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-354"><a rel="privacy-policy" href="https://wiki-stage.epicflow.com/privacy-policy/">Privacy Policy</a></li>
+	<li id="menu-item-1869" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1869"><a href="https://wiki-stage.epicflow.com/video-library/">Video library</a></li>
+	<li id="menu-item-3332" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3332"><a href="https://wiki-stage.epicflow.com/training-materials/">Training Materials</a></li>
+</ul>
+</li>
+<li id="menu-item-1466" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1466"><a href="https://wiki-stage.epicflow.com/downloads/">Downloads</a></li>
+<li id="menu-item-318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-318"><a href="https://wiki-stage.epicflow.com/contact-us/">Contact Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-326"><a href="https://wiki-stage.epicflow.com/about-epicflow/">About Epicflow</a></li>
+	<li id="menu-item-314" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-314"><a href="https://wiki-stage.epicflow.com/submit-a-ticket/">Submit A Ticket</a></li>
+</ul>
+</li>
+</ul>			</nav>
+			<!-- /.nav-header -->
+		
+	</div>
+	</header>
+	<!-- /.site-header -->
+
+	
+	
+
+</div>
+<!-- /.site-header -->
+
+
+<div class="ht-pageheader">
+<div class="ht-container">
+
+	
+<!-- .hkb-breadcrumbs -->
+<div class="hkb-breadcrumbs_wrap">
+			<ol class="hkb-breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList" >
+										<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<a itemprop="item" href="https://wiki-stage.epicflow.com">
+							<span itemprop="name">Home</span>
+							<svg class="hkb-breadcrumbs__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 34.1"><g><path d="M19,17c0,0.5-0.2,1-0.6,1.4L3.4,33.5c-0.8,0.8-2,0.8-2.8,0c-0.8-0.8-0.8-2,0-2.8L14.2,17L0.6,3.4c-0.8-0.8-0.8-2,0-2.8  c0.8-0.8,2-0.8,2.8,0l15.1,15.1C18.8,16,19,16.5,19,17z"/></g></svg>
+						</a>
+										<meta itemprop="position" content="1" />
+				</li>               
+							<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<a itemprop="item" href="https://wiki-stage.epicflow.com/article-categories/integration-with-external-systems/">
+							<span itemprop="name">Integration with external systems</span>
+							<svg class="hkb-breadcrumbs__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 34.1"><g><path d="M19,17c0,0.5-0.2,1-0.6,1.4L3.4,33.5c-0.8,0.8-2,0.8-2.8,0c-0.8-0.8-0.8-2,0-2.8L14.2,17L0.6,3.4c-0.8-0.8-0.8-2,0-2.8  c0.8-0.8,2-0.8,2.8,0l15.1,15.1C18.8,16,19,16.5,19,17z"/></g></svg>
+						</a>
+										<meta itemprop="position" content="2" />
+				</li>               
+							<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span>
+							<span itemprop="name">Integration via CSV File</span>
+							<link itemprop="item" href="https://wiki-stage.epicflow.com/knowledge-base/integration-with-csv-file/" />
+						</span> 
+										<meta itemprop="position" content="3" />
+				</li>               
+					</ol>       
+	</div>  
+<!-- /.hkb-breadcrumbs -->
+	
+<form class="hkb-site-search" method="get" action="https://wiki-stage.epicflow.com/">
+		<label class="hkb-screen-reader-text" for="hkb-search">Search For</label>
+		<input id="hkb-search" class="hkb-site-search__field" type="text" value="" placeholder="Search the knowledge base..." name="s" autocomplete="off">
+		<img class="hkb-site-search__loader" src="https://wiki-stage.epicflow.com/wp-content/themes/knowall/img/loading.svg" alt="Searching..." />
+		<input type="hidden" name="ht-kb-search" value="1" />
+    	<input type="hidden" name="lang" value=""/>
+		<button class="hkb-site-search__button" type="submit"><span>Search</span></button>
+</form>
+
+</div>
+</div>
+
+<!-- .ht-page -->
+<div class="ht-page ht-page--sidebarleft">
+<div class="ht-container">
+
+			<!-- .sidebar -->
+	<aside class="sidebar sidebar--sticky" itemscope itemtype="https://schema.org/WPSideBar">
+		<section id="ht-kb-toc-widget-3" class="widget hkb_widget_toc"><h3 class="widget__title">Contents</h3>            <nav id="navtoc" role="navigation">
+
+                
+
+            <ol class="nav"><!-- adding li --><li class="active"><a href="#resource-pool">Resource Pool</a><!-- adding level --><ol><li><a href="#structure">Structure</a><!-- adding li --></li><li class=""><a href="#creating-resource-pool">Creating Resource Pool</a><!-- removing level --></li></ol></li><li><a href="#project-file">Project File</a><!-- adding level --><ol><li><a href="#structure-2">Structure</a><!-- adding li --></li><li class=""><a href="#creating-project">Creating Project</a><!-- removing level --></li></ol></li><li><a href="#first-data-import">First data Import</a><!-- adding level --><ol><li><a href="#connection">Connection</a><!-- adding li --></li><li class=""><a href="#scope-and-projects">Scope and Projects</a><!-- adding li --></li><li class=""><a href="#groups-and-users">Groups and Users</a><!-- adding li --></li><li class=""><a href="#finalize-import">Finalize Import</a><!-- removing level --></li></ol></li><li><a href="#second-import-configuration">Second Import Configuration</a><!-- adding li --></li><li class=""><a href="#edit-connection">Edit connection</a><!-- adding li --></li><li class=""><a href="#delete-connection">Delete connection</a><!-- adding li --></li><li class=""><a href="#troubleshooting">Troubleshooting</a></li></ol><!-- /ht-kb-toc-widget -->
+            </nav>
+
+            </section>	</aside>
+	<!-- /.sidebar -->
+
+	
+		<div class="ht-page__content">
+		<article class="hkb-article post-190 ht_kb type-ht_kb status-publish format-standard hentry ht_kb_category-integration-with-external-systems" itemscope itemtype="https://schema.org/CreativeWork">
+		<meta itemprop="datePublished" content="September 4, 2018">
+
+			<header class="hkb-article__header">
+				<h1 class="hkb-article__title" itemprop="headline">Integration via CSV File</h1>
+			</header>
+
+			<div class="ht-mobile-toc"><strong class="ht-mobile-toc__title">Contents</strong>            <nav id="navtoc" role="navigation">
+
+                
+
+            <ol class="nav"><!-- adding li --><li class="active"><a href="#resource-pool">Resource Pool</a><!-- adding level --><ol><li><a href="#structure">Structure</a><!-- adding li --></li><li class=""><a href="#creating-resource-pool">Creating Resource Pool</a><!-- removing level --></li></ol></li><li><a href="#project-file">Project File</a><!-- adding level --><ol><li><a href="#structure-2">Structure</a><!-- adding li --></li><li class=""><a href="#creating-project">Creating Project</a><!-- removing level --></li></ol></li><li><a href="#first-data-import">First data Import</a><!-- adding level --><ol><li><a href="#connection">Connection</a><!-- adding li --></li><li class=""><a href="#scope-and-projects">Scope and Projects</a><!-- adding li --></li><li class=""><a href="#groups-and-users">Groups and Users</a><!-- adding li --></li><li class=""><a href="#finalize-import">Finalize Import</a><!-- removing level --></li></ol></li><li><a href="#second-import-configuration">Second Import Configuration</a><!-- adding li --></li><li class=""><a href="#edit-connection">Edit connection</a><!-- adding li --></li><li class=""><a href="#delete-connection">Delete connection</a><!-- adding li --></li><li class=""><a href="#troubleshooting">Troubleshooting</a></li></ol><!-- /ht-kb-toc-widget -->
+            </nav>
+
+            </div>
+			<div class="hkb-article__content" itemprop="text">
+
+				<p>This part of the wiki describes structure of CSV files as well as next configuration steps and upload of such into Epicflow system.</p>
+<p>To start, use the project and resource pool templates found by the next link <a href="https://wiki-stage.epicflow.com/downloads/">CSV Template</a>. It is not mandatory to use this template, but the structure is optimized for Epciflow usage and helps in understanding what information is missed in files imported from third parties system.</p>
+<h1 id="resource-pool" >Resource Pool</h1>
+<p><span style="font-weight: 400;">Epicflow use Resource Pool as the source of the Project&#8217;s resources. It must contain required information is the scope of specified CSV file structure</span><span style="font-weight: 400;">. Template of such can be download from the corresponding <a href="https://wiki-stage.epicflow.com/downloads/">Wiki page</a>.</span></p>
+<p><span style="font-weight: 400;">For the purpose of Epicflow, the Resource Pool requires:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">adding </span> <span style="font-weight: 400;">the Groups name to the Resource Pool;</span></li>
+<li>adding the Resource names to the Resource Pool and specify belonging of the particular Resource to a specific Group;</li>
+<li style="font-weight: 400;">Set a special key for identification difference between Resource and Group for the Epicflow; The R of G column.</li>
+<li style="font-weight: 400;">Optionally: Define resource availability</li>
+</ul>
+<p>If Resource Pool file is going to be imported from the third party system and later uploaded into Epicflow system, then you would need additionally to:</p>
+<ul>
+<li>verify that imported file does contain all required fields and information. If not, add those which are miss</li>
+<li>verify that appropriate format of values is used for each particular field and correct such in case of necessity</li>
+<li>remove all duplicate fields if there such</li>
+<li>verify that separator used in CSV file is &#8220;;&#8221; unless a different one separator is configured for usage on mutual agreement.</li>
+</ul>
+<h2 id="structure" >Structure</h2>
+<p>Resource Pool structure is defined with next columns:</p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;"><strong>&#8220;ResID&#8221;</strong> &#8211;</span> contains ID of the Resource or Group Resource. It should be unique withing the file.</li>
+<li style="font-weight: 400;"><strong>&#8220;ResName&#8221;</strong> &#8211; describes Resource or Group Name.</li>
+<li><em>(Optional)</em> <strong>&#8220;Email&#8221;</strong> &#8211; required for further invite procedure of the users into the system.</li>
+<li><strong>&#8220;ResGrID&#8221;</strong> &#8211; should contain &#8220;ResID&#8221; of the Resource Group to which Resource is assigned to. For the Resource Group it should be an empty field.</li>
+<li><strong>&#8220;Type&#8221;</strong> &#8211; special keys column. For each Resource should contain “R” key and for the Resource Group it should be “G”.</li>
+<li><strong>&#8220;CapFactor&#8221;</strong> &#8211; specifies capacity of the resource where 1 is equal to 1 FTE. For Resource Group field should be empty.</li>
+<li><strong>&#8220;StartDate&#8221;</strong> &#8211; usually contains a date when resource was added into the system. By default it should be in format &#8220;DD-MM-YYYY&#8221; unless opposite is defined and agreed.</li>
+<li><em>(Optional)</em> <strong>&#8220;EndDate&#8221;</strong> &#8211; date after which capacity of the resource will be equal to &#8220;0&#8221;.By default it should be in format &#8220;DD-MM-YYYY&#8221; unless opposite is defined and agreed.</li>
+</ul>
+<p><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-2043" src="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/CSV-Resource-Pool-Structure-1.jpg" alt="" width="610" height="422" /></p>
+<p style="text-align: center;"><b><i>Screen #1 &#8211; Resource Pool &#8211; Structure</i></b></p>
+<h2 id="creating-resource-pool" >Creating Resource Pool</h2>
+<ul>
+<li>Save downloaded template in the Epicflow file folder and rename it according to the project naming convention. i.e. <strong><em>&#8220;resourcepool.csv&#8221;. </em></strong></li>
+<li>As next step you need to specify Resource Groups to which all resources will be connected in result. For that next three fields must be filled in per each record of the group:
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;"><strong>&#8220;ResID&#8221;</strong> &#8211;</span> unique ID in the scope of the file.</li>
+<li><strong>&#8220;ResName&#8221;</strong> &#8211; specifies Group Name.</li>
+<li><strong>&#8220;Type&#8221;</strong> &#8211; special keys column for which key &#8220;G&#8221; must be set.</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" class="aligncenter size-full wp-image-2044" src="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/CSV-Resource-Pool-Resource-Group.jpg" alt="" width="606" height="171" /></p>
+<p style="text-align: center;"><b><i>Screen #2 &#8211; Resource Pool &#8211; Resource Group</i></b></p>
+<p>Also there is a special group called “UCLT” (&#8220;Un-Compressible Lead Time&#8221;) which can be used as a resource in case of ordering time. If task is assigned on UCLT group, then on daily basis, Epicflow automatically subtracts Capacity of the group from the tasks&#8217; Remaining Work.</p>
+<ul>
+<li>To add UCLT group you need to add a group named &#8220;UCLT&#8221; as described at previous step.</li>
+</ul>
+    		<div class="hts-messages hts-messages--info    "   >
+    			    			    				<p>
+    					Be aware that UCLT group shouldn&#8217;t contain any resource assigned to it and it doesn&#8217;t work with the task&#8217;s duration. That&#8217;s why you need always specify Remaining Work equal to required duration.    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<p><img decoding="async" class="aligncenter size-full wp-image-2045" src="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/CSV-Resource-Pool-UCLT-Group.jpg" alt="" width="603" height="70" /></p>
+<p style="text-align: center;"><b><i>Screen #3 &#8211; Resource Pool &#8211; UCLT Group</i></b></p>
+<ul>
+<li>As soon as groups are specified next step will be adding Resources with linking such to each group. For that next fields must be filled in per each record of the resource:
+<ul>
+<li><span style="font-weight: 400;"><strong>&#8220;ResID&#8221;</strong> &#8211;</span> unique ID in the scope of the file.</li>
+<li><strong>&#8220;ResName&#8221;</strong> &#8211; specifies Name of the Resoruce.</li>
+<li><strong>&#8220;ResGrID&#8221;</strong> &#8211; should contain &#8220;<em>ResID</em>&#8221; of the Resource Group to which Resource is assigned to.</li>
+<li><strong>&#8220;Type&#8221;</strong> &#8211; special keys column for which key &#8220;R&#8221; must be set.</li>
+<li><strong>&#8220;CapFactor&#8221;</strong> &#8211; specifies capacity of the resource where 1 is equal to 1 FTE.</li>
+<li><strong>&#8220;StartDate&#8221;</strong> &#8211; usually contains a date when resource was added into the system. By default it should be in format &#8220;DD-MM-YYYY&#8221;.</li>
+</ul>
+</li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-2047" src="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/CSV-Resource-Pool-Resources-1.jpg" alt="" width="603" height="292" /></p>
+<p style="text-align: center;"><b><i>Screen #3 &#8211; Resource Pool &#8211; Resoruces</i></b></p>
+    		<div class="hts-messages hts-messages--info  hts-messages--withtitle hts-messages--withicon "   >
+    			<span class="hts-messages__title">NOTE</span>    			    				<p>
+    					Avoid an empty cells for mandatory fields cause it may prevent further reading of the table.</p>
+<p>Avoid input of inappropriate types cause it may prevent further reading of the table.    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<p>For the case when one resource must be in two groups simultaneously next actions must be performed:</p>
+<ul>
+<li>Add resource (for example “Radio DrieÃ«nhuizen”) within first group (for example “SecondOrder”) as described above</li>
+</ul>
+<ul>
+<li>Add second resource with slightly different name (for example “Radio DrieÃ«nhuizen_v2”) within second group (for example “NewFirstOrder”)</li>
+</ul>
+<ul>
+<li>Set the same Email Address for both resources.</li>
+</ul>
+<p>In such way Epicflow system accepts such identification as one resource with the shortest name “Radio DrieÃ«nhuizen” which do belong to “NewFirstOrder” and “SecondOrder” groups.</p>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-2049" src="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/CSV-Resource-Pool-Resoruce-within-multiple-Groups.jpg" alt="" width="736" height="127" /></p>
+<p style="text-align: center;"><b><i>Screen #4 &#8211; Resource Pool &#8211; Resource within multiple Groups</i></b></p>
+<ul>
+<li>Last but not the least, do not forget to save and make a backup copy of the Resource Pool file.</li>
+</ul>
+    		<div class="hts-messages hts-messages--info  hts-messages--withtitle hts-messages--withicon "   >
+    			<span class="hts-messages__title">Note</span>    			    				<p>
+    					</p>
+<p>Please note that as soon as resource is uploaded in to the Epicflow system any change of Resource parameters and values must be done in Epicflow directly.</p>
+<p>This restriction came from the fact that one Epicflow resource can be linked to many external systems where resource parameters may differ, so update synchronization from Epicflow to Resource Pool and via verse will be not correct for already uploaded resources.</p>
+<p>    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<h1 id="project-file" >Project File</h1>
+<p><span style="font-weight: 400;">In a similar way to Resource Pool file it must contain required information is the scope of specified CSV file structure</span><span style="font-weight: 400;">. Template of such can be download from the corresponding <a href="https://wiki-stage.epicflow.com/downloads/">Wiki page</a>.</span></p>
+<p><span style="font-weight: 400;">For the purpose of Epicflow, the Project requires:</span></p>
+<ul>
+<li>Beforehand prepared Resource Pool file</li>
+<li>Project Name</li>
+<li>Defined Start and end Project dates</li>
+<li>Defined intermediate Milestones</li>
+<li>Defined summary tasks if such are applicable in your project structure</li>
+<li>Defined tasks list with estimations and resource allocations</li>
+<li>Specified network dependency connections</li>
+</ul>
+<p>If Project file is going to be imported from the Third Party system and later uploaded into Epicflow system, then you would need additionally to:</p>
+<ul>
+<li>verify that imported file does contain all required fields and information. If not, add those which are miss</li>
+<li>verify that appropriate format of values is used for each particular field and correct such in case of necessity</li>
+<li>verify that separator used in CSV file is &#8220;;&#8221; unless a different one separator is configured for usage on mutual agreement.</li>
+</ul>
+<h2 id="structure-2" >Structure</h2>
+<p>Project file structure is defined with next columns:</p>
+<ul>
+<li><strong>&#8220;Project_ID&#8221;</strong> &#8211; Defines ID of the appropriate project. Number should be unique for each project but will be the same for each item of the Project (Summary, Task, Milestone).</li>
+<li><strong>&#8220;Project_Name&#8221;</strong> &#8211; This cell will contain Name of the Project and should be specified for all tasks or summary tasks records in csv file.</li>
+<li><strong>&#8220;Task_UID&#8221;</strong>&#8211; Column contains ID of the appropriate task from the external system. Number should be unique in project scope.</li>
+<li>(Optional) <strong>&#8220;Priority&#8221;</strong> &#8211; for priority identification from external system.</li>
+<li><strong>&#8220;Task_Name&#8221;</strong> &#8211; Column basically contains the name of the Tasks or the Tasks group or Project itself.</li>
+</ul>
+    		<div class="hts-messages hts-messages--info    "   >
+    			    			    				<p>
+    					If the Tasks in the cell Bn, Bn + 1, &#8230; Bn + x, going successively one after another, contains the same description and each of them corresponds to the type &#8220;Task&#8221;, from column F, the system will record the record data as one task with multiple assignment of resources to this task.    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<ul>
+<li><strong>&#8220;Task_Type&#8221;</strong> &#8211; Column defines context of the record in a row and may contain one of the next description:<br />
+<em><strong>&#8211; ProjSum</strong></em><br />
+<em><strong>&#8211; Summary</strong></em><br />
+<em><strong>&#8211; Task</strong></em><br />
+<em><strong>&#8211; Milestone</strong> </em></li>
+</ul>
+<ul>
+<li><strong>&#8220;UID_Summary&#8221;</strong> &#8211; Contains the task group ID (Summary ID) to which the task belongs.The Task Group ID is taken from the corresponding cell in the &#8220;<em>Task_UID</em>&#8221; column</li>
+<li><strong>&#8220;Res_UID&#8221;</strong> &#8211; A unique resource identifier of the resource assigned to the specified task. Value is taken from corresponding <em>“ResID” </em>field of the Resource Pool file.</li>
+<li><strong>&#8220;Res_Name&#8221;</strong> &#8211; Column contains Resource Name assigned to the task specified in the current line. Do correspond to “<em>ResName</em>” field of the Resource in Resource Pool file.</li>
+<li><strong>&#8220;Group_UID&#8221;</strong> &#8211; This column contains ID of the group to which resource does belong or which is assigned for task fulfillment. Value is taken from the corresponding <em>“ResID” </em>field of the Resource Pool file.</li>
+<li><strong>&#8220;Unique_ID_Predecessors&#8221;</strong> &#8211; Cell indicates predecessor (task which must be accomplished before) to the current task. It contain a number from the &#8220;<em>Task_UID</em>&#8221; column.</li>
+<li><strong>&#8220;Remaining_Work&#8221;</strong> -The remaining task execution time specified in minutes.</li>
+<li><strong>&#8220;Actual_Work&#8221;</strong> &#8211; The actual task execution time specified in minutes.</li>
+<li><strong>&#8220;Scheduled_Work&#8221;</strong> &#8211; An initial estimate of the time required to perform the current task in minutes.</li>
+<li><strong>&#8220;Deadline&#8221;</strong> &#8211; Contains planned Deadline for the project or task or summary task to be accomplished.</li>
+<li><strong>&#8220;Start&#8221;</strong> &#8211; Contains planned Start Date</li>
+<li><strong>&#8220;Finish&#8221;</strong> &#8211; Contains planned Finish Date</li>
+<li>(Optional)<strong> &#8220;Baseline_Work&#8221;</strong> &#8211; Contains initial snapshot of your schedule when you first save your project information to track progress and compare your updates</li>
+<li><strong>&#8220;Assignment_ID&#8221;</strong> &#8211; It’s ID of resource assignment on appropriate task from the<br />
+external system. Must be unique.</li>
+<li>(Optional) <strong>&#8220;Hyperlink&#8221;</strong> &#8211; may be used to specify hyperlink on any external source.</li>
+<li>(Optional) <strong>&#8220;ReadyToStartByPM&#8221;</strong> &#8211; if you would like to mark task as one which can be started before predecessor fulfillment then this field can be sued to identify such case</li>
+<li><strong>&#8220;Assignment_Units&#8221;</strong> &#8211; Contains a description of the number of specified resources for task accomplishment. By default always 1.</li>
+</ul>
+<p>Next fields are skipped in description since they are not obligatory and meaning of such is clear from the column naming: &#8220;ID&#8221;, &#8220;Proj_Keyword&#8221;, &#8220;Proj_Manager&#8221;, &#8220;Proj_Folder&#8221;, &#8220;Pro_Category&#8221;, &#8220;Task_Cost&#8221;, &#8220;Task_Remark1&#8221;, &#8220;Task_Remark2&#8221;, &#8220;Task_Remark3&#8221;, &#8220;Name_Closest_MS&#8221;, &#8220;Deadline_First_MS&#8221;, &#8220;Can_Start&#8221;, &#8220;Skill&#8221;, &#8220;Notes&#8221;, &#8220;Duration UCLT&#8221;.</p>
+<h2 id="creating-project" >Creating Project</h2>
+<ul>
+<li><span style="font-weight: 400;">Save downloaded template in the Epicflow file folder and rename it according to the project naming convention. i.e. </span><strong><em>&#8220;Project_Name.csv&#8221;. </em></strong></li>
+<li>Adding of the project starts with first record where we declare such. For that next fields must be filled in per each project:
+<ul>
+<li><strong>&#8220;Project_ID&#8221;</strong> &#8211; Defines ID of the project. Number should be unique for each project.</li>
+<li><strong>&#8220;Project_Name&#8221;</strong> &#8211; defines Name of the Project.</li>
+<li><strong>&#8220;Task_UID&#8221;</strong>&#8211; defines internal in scope of project ID and should be unique in the project scope.</li>
+<li><strong>&#8220;Task_Name&#8221;</strong> &#8211; contains name of the Project itself which will be displayed in Epicflow system.</li>
+<li><strong>&#8220;Task_Type&#8221;</strong> &#8211; Column defines context of the record and in our case it should be &#8220;<em>ProjSum&#8221;</em></li>
+<li><strong>&#8220;Start&#8221;</strong> &#8211; Contains planned Start Date of the project</li>
+<li><strong>&#8220;Finish&#8221;</strong> &#8211; Contains planned Finish Date of the project</li>
+<li><strong>&#8220;Assignment_ID&#8221;</strong> &#8211; for declaration record start it with 1.</li>
+<li><strong>&#8220;Assignment_Units&#8221;</strong> &#8211; description of the number of specified resources for task accomplishment but for the first declaration record it should be &#8216;0&#8217;</li>
+<li>As for other fields keep them empty for the declaration row.</li>
+</ul>
+</li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-2054" src="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/CSV-Project-File-Project-declaration-.jpg" alt="" width="767" height="71" /></p>
+<p style="text-align: center;"><b><i>Screen #5 &#8211; Project file &#8211; Declaration line</i></b></p>
+<ul>
+<li>Next step is to define top level Summaries. For that next fields must be filled in per each Summary
+<ul>
+<li><strong>&#8220;Project_ID&#8221;</strong> &#8211; ID of the project which should be the same as we have declared at previous step</li>
+<li><strong>&#8220;Project_Name&#8221;</strong> &#8211; should be also taken from the same column of the previous step.</li>
+<li><strong>&#8220;Task_UID&#8221;</strong>&#8211; defines internal in scope of project ID and should be unique in the project scope.</li>
+<li><strong>&#8220;Task_Name&#8221;</strong> &#8211; contains name of the Summary itself which will be displayed in Epicflow system.</li>
+<li><strong>&#8220;Task_Type&#8221;</strong> &#8211; Column defines context of the record and in our case it should be &#8220;<em>Summary&#8221;</em></li>
+<li><strong>&#8220;Assignment_ID&#8221;</strong> &#8211; must be specified unique value. In our case we can simply increment it.</li>
+</ul>
+</li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-2056" src="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/CSV-Project-File-Summary-declaration-.jpg" alt="" width="767" height="91" /></p>
+<p style="text-align: center;"><b><i>Screen #6 &#8211; Project file &#8211; Summary </i></b></p>
+<ul>
+<li>As top level Summaries are added you can complicate structure of the project by adding next level Summaries. It should be performed in a similar way as described above but in addition field <strong>&#8220;UID_Summary&#8221;</strong> must be specified. It should contain the Summary ID to which the Summary belongs.It is taken from the corresponding cell in the &#8220;<em>Task_UID</em>&#8221; column.</li>
+<li>Next step of iteration is to add description for the tasks. For that next fields must be filled in per each Task:
+<ul>
+<li><strong>&#8220;Project_ID&#8221;</strong> &#8211; ID of the project which should be the same as we have declared at first step</li>
+<li><strong>&#8220;Project_Name&#8221;</strong> &#8211; should be also taken from the same column of the first step.</li>
+<li><strong>&#8220;Task_UID&#8221;</strong>&#8211; defines internal in scope of project ID and should be unique in the project scope.</li>
+<li><strong>&#8220;Task_Name&#8221;</strong> &#8211; contains name of the Task itself which will be displayed in Epicflow system.</li>
+<li><strong>&#8220;Task_Type&#8221;</strong> &#8211; Column defines context of the record and in our case it should be &#8220;<em>Task&#8221;</em></li>
+<li><strong>&#8220;UID_Summary&#8221;</strong> &#8211;  should contain the Summary ID to which the task belongs.It is taken from the corresponding cell in the &#8220;<em>Task_UID</em>&#8221; column.</li>
+<li><strong>&#8220;Res_UID&#8221;</strong> &#8211; A unique resource identifier of the resource assigned to the specified task. Value is taken from corresponding <em>“ResID” </em>field of the Resource Pool file.</li>
+<li><strong>&#8220;Res_Name&#8221;</strong> &#8211; Column contains Resource Name assigned to the task specified in the current line. Do correspond to “<em>ResName</em>” field of the Resource in Resource Pool file.</li>
+<li><strong>&#8220;Group_UID&#8221;</strong> &#8211; This column contains ID of the group to which resource does belong or which is assigned for the task fulfillment. Value is taken from the corresponding <em>“ResID” </em>field of the Resource Pool file.</li>
+<li><strong>&#8220;Remaining_Work&#8221;</strong> -The remaining task execution time specified in minutes.</li>
+<li><strong>&#8220;Actual_Work&#8221;</strong> &#8211; The actual task execution time specified in minutes.</li>
+<li><strong>&#8220;Scheduled_Work&#8221;</strong> &#8211; An initial estimate of the time required to perform the current task in minutes.</li>
+<li><strong>&#8220;Start&#8221;</strong> &#8211; Contains planned Start Date</li>
+<li><strong>&#8220;Finish&#8221;</strong> &#8211; Contains planned Finish Date</li>
+<li>(Optional)<strong> &#8220;Baseline_Work&#8221;</strong> &#8211; Contains initial snapshot of your schedule when you first save your project information to track progress and compare your updates</li>
+<li><strong>&#8220;Assignment_ID&#8221;</strong> &#8211; must be specified unique value. In our case we can simply increment it.</li>
+<li>(Optional) <strong>&#8220;Hyperlink&#8221;</strong> &#8211; may be used to specify hyperlink on any external source.</li>
+<li>(Optional) <strong>&#8220;ReadyToStartByPM&#8221;</strong> &#8211; if you would like to mark task as one which can be started before predecessor fulfillment then this field can be sued to identify such case</li>
+<li><strong>&#8220;Assignment_Units&#8221;</strong> &#8211; Contains a description of the number of specified resources for task accomplishment. By default always 1.</li>
+</ul>
+</li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-2064" src="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/CSV-Project-File-Tasks-declaration-1-1.jpg" alt="" width="781" height="309" /></p>
+<p style="text-align: center;"><b><i>Screen #7 &#8211; Project file &#8211; Tasks creation</i></b></p>
+<ul>
+<li>Next step is to build-up connections between items of the Project to have chains of tasks in place. For that must be used field:
+<ul>
+<li><strong>&#8220;Unique_ID_Predecessors&#8221;</strong> &#8211; which indicates predecessor (item which must be accomplished before) to the current item. It contain a number from the &#8220;<em>Task_UID</em>&#8221; column.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>To finish planning you also need to specify milestone as a deadline and for that next fields must be specified:
+<ul>
+<li><strong>&#8220;Project_ID&#8221;</strong> &#8211; ID of the project which should be the same as we have declared at first step</li>
+<li><strong>&#8220;Project_Name&#8221;</strong> &#8211; should be also taken from the same column of the first step.</li>
+<li><strong>&#8220;Task_UID&#8221;</strong>&#8211; defines internal in scope of project ID and should be unique in the project scope.</li>
+<li><strong>&#8220;Task_Name&#8221;</strong> &#8211; contains name of the Milestone itself which will be displayed in Epicflow system.</li>
+<li><strong>&#8220;Task_Type&#8221;</strong> &#8211; Column defines context of the record and in our case it should be &#8220;<em>Milestone</em><em>&#8220;</em></li>
+<li><strong>&#8220;UID_Summary&#8221;</strong> &#8211;  should contain the Summary ID to which the Milestone belongs.It is taken from the corresponding cell in the &#8220;<em>Task_UID</em>&#8221; column.</li>
+<li><strong>&#8220;Unique_ID_Predecessors&#8221;</strong> &#8211; which indicates predecessor (item which must be accomplished before) to the current item. It contain a number from the &#8220;<em>Task_UID</em>&#8221; column.</li>
+<li><strong>&#8220;Deadline&#8221;</strong> &#8211; Contains planned Deadline for the project or task or summary task to be accomplished. By default it should be in format &#8220;<em>DD-MM-YYYY</em>&#8221; unless opposite is defined and agreed.</li>
+</ul>
+</li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-2072" src="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/CSV-Project-File-Milestone-declaration-.jpg" alt="" width="887" height="76" /></p>
+<p style="text-align: center;"><b><i>Screen #8 &#8211; Project file &#8211; Milestone creation</i></b></p>
+<ul>
+<li>Last but not the least is to save all changes and make backup of the CSV file.</li>
+</ul>
+<p>Please note that CSV file can contain more than one project description. However, you can also divide all projects and store them in separate files.</p>
+    		<div class="hts-messages hts-messages--info  hts-messages--withtitle hts-messages--withicon "   >
+    			<span class="hts-messages__title">NOTE</span>    			    				<p>
+    					Avoid an empty cells for mandatory fields cause it may prevent further reading of the table.</p>
+<p>Avoid input of inappropriate types cause it may prevent further reading of the table.    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<h1 id="first-data-import" ><strong>First </strong><strong>data </strong><strong>Import</strong></h1>
+<p>Prerequisites for this step is to have Resource Pool and Project CSV files ready. Please note that before files upload they must be placed at server side. For that you should use ftp site provided by Epicflow. Information how to configure it is described at <a href="https://wiki-stage.epicflow.com/knowledge-base/automatic-report-generator/#getting-your-reports">Getting your Reports </a>article. Other related and required information can be provided by Support team on your request.</p>
+<h2 id="connection" ><strong>Connection</strong></h2>
+<p>As soon as files are placed at server side in required location</p>
+<ul>
+<li>Select &#8220;<em>Import</em>&#8221; item at the left menu bar to be redirected to the CSV Import configuration page</li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-2073" src="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/CSV-Import-Connection-Configuration.jpg" alt="" width="1012" height="584" /></p>
+<p style="text-align: center;"><b><i>Screen #9 &#8211; CSV Import &#8211; Connection configuration</i></b></p>
+<ul>
+<li>Define location of the CSV files where they been placed at server side in &#8220;<strong>Directory where the files are placed</strong>&#8221; field. Be default it should be something like &#8220;C:\inetpub\ftproot\&lt;CompanyHomeFolder&gt;&#8221;</li>
+<li>&#8220;<strong>Project files mask</strong>&#8221; &#8211; can be used to set key to filter out project csv files but for the first import keep it as it is without changes.</li>
+<li>&#8220;<strong>Resource Pool file name</strong>&#8221; &#8211; name of csv Resource Pool file must be specified here but if you&#8217;ve used standard no changes to this field should be done.</li>
+<li>On editing finish press &#8220;<em>Next</em>&#8221; button to start &#8220;<em>Scope and Projects</em>&#8221; configuration.</li>
+</ul>
+<h2 id="scope-and-projects" ><strong>Scope and Projects</strong></h2>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1372" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/10/CSV-Import-3.jpg" alt="" width="1000" height="746" /></p>
+<p style="text-align: center;"><b><i>Screen #10 &#8211; CSV Import &#8211; Scope and Projects</i></b></p>
+<ul>
+<li>With &#8220;<strong>Jira Scope</strong>&#8221; drop-down list you can specify set of CSV files which must be imported into the system.</li>
+</ul>
+<ul>
+<li><strong>Project Field Mapping</strong> – defines what you would like to have as a project in Epicflow. For CSV import only one possible option is available:
+<ul>
+<li><strong>Project</strong> – Each separately created project in CSV file will be imported as a Project to the Epicflow</li>
+</ul>
+</li>
+</ul>
+<p>On finishing previous two steps system performs readout of Resource Pool and selected Project files. Result of such action are defined &#8220;<em>Groups</em>&#8220;, &#8220;<em>Users</em>&#8221; lists and &#8220;<em>Projects</em>&#8220;.</p>
+<ul>
+<li>Select those project which you would like to have imported into the system.</li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-2074" src="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/CSV-Import-Projects.jpg" alt="" width="717" height="160" /></p>
+<p style="text-align: center;"><b><i>Screen #10 &#8211; CSV Import &#8211; Projects to import</i></b></p>
+<ul>
+<li>If you put a tick on <strong>Automatic Import</strong>, the system will automatically import any newly appeared projects from the defined scope if related projects have no shared tasks between projects. Be aware, that in case you have unchecked any Project in the Projects list (despite the automatic import button is on), the project won’t be imported to the system neither now, not later automatically, unless it’s selected again.</li>
+<li>In case if NO Epicflow CSV templates been used you need to specify mapping of corresponding fields of your CSV to the values required by system. For that Press &#8220;<em>Expand</em>&#8221; link to the right from &#8220;<strong>Fields Mapping</strong>&#8221; text and set such relation.</li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1373" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/10/CSV-Import-4.jpg" alt="" width="370" height="482" /></p>
+<p style="text-align: center;"><b><i>Screen #11a &#8211; CSV Import &#8211; Fields Mapping</i></b></p>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1374" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/10/CSV-Import-5.jpg" alt="" width="371" height="486" /></p>
+<p style="text-align: center;"><b><i>Screen #11b &#8211; CSV Import &#8211; Fields Mapping</i></b></p>
+<ul>
+<li>Scroll down in the &#8220;Scope nad Projects&#8221; block and press &#8220;Next&#8221; button. Such action will redirect you to the &#8220;<strong>Groups and Users</strong>&#8221; configuration step.</li>
+</ul>
+<h2 id="groups-and-users" ><strong>Groups and Users</strong></h2>
+<p>Third step will require your attention to configure and define Groups and Users for the import</p>
+<ul>
+<li><em><strong>Import Users</strong></em> – Epicflow allows you to choose all users from the Jira system or users from the selected scope of Projects.</li>
+<li><em><strong>Group assignee</strong> </em>– defines source of group assignee</li>
+<li><em><strong>Group Field Mapping and Prefix</strong></em> –  It will allow you to specify the Prefix(es) which should be used to refine the groups list.</li>
+</ul>
+<p>Closer to the top of the screen, you’ll see the list of Groups with the specified number of Users in the loop and a separate field displaying the names of the users and groups they belong to.</p>
+<ul>
+<li>Review this section to determine the right relation of users to groups and select those which are needed to be imported into the Ecpiflow. Be aware that all deselected users will appear in the unmapped area of &#8220;Resource Management&#8221; page and you still will be able to draw them to the process later on.</li>
+</ul>
+<p>You can either remove a group relation or add a new one to a specific user by simple left mouse click.</p>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1375" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/10/CSV-Import-6.jpg" alt="" width="997" height="719" /></p>
+<p style="text-align: center;"><b><i>Screen #12 &#8211; CSV Import &#8211; Groups and Users</i></b></p>
+<ul>
+<li>To finalize third step press &#8220;<em>Next</em>&#8221; button at the right bottom part of the frame.</li>
+</ul>
+<h2 id="finalize-import" ><strong>Finalize Import</strong></h2>
+<ul>
+<li>Now, on condition that everything’s configured correctly, you can finalize the import by left mouse click over the “Import” button. Be aware that even that <strong>this action cannot be undone Import settings can be reconfigured later as needed.</strong></li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1377" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/10/CSV-Import-8.jpg" alt="" width="1002" height="593" /></p>
+<p style="text-align: center;"><b><i>Screen #13 &#8211; CSV Import &#8211; Finalize Import</i></b></p>
+<p>Having imported your CSV data into the Epicflow system will redirect you to the Pipeline page with all projects imported into the system.</p>
+    		<div class="hts-messages hts-messages--info  hts-messages--withtitle hts-messages--withicon "   >
+    			<span class="hts-messages__title">Note</span>    			    				<p>
+    					</p>
+<p>As soon as resource is uploaded in to the Epicflow system any change of Resource parameters and values must be done in Epicflow directly.</p>
+<p>This restriction came from the fact that one Epicflow resource can be linked to many external systems where resource parameters may differ, so update synchronization from Epicflow to Resource Pool and via verse will be not correct for already uploaded resources.</p>
+<p>    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<h1 id="second-import-configuration" >Second Import Configuration</h1>
+<p>If previously your system was already configured to connect with a different instances you’ll see a list of such connections as soon as you visit Import page.</p>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1370" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/10/CSV-Import-1.jpg" alt="" width="1211" height="221" /></p>
+<p style="text-align: center;"><b><i>Screen #13 &#8211; CSV Import &#8211; Connections list</i></b></p>
+<ul>
+<li>To create a new connection, press “New connection” button. As result you’ll be automatically redirected to the Connection configuration page . All you would need to do is to cover all steps as during First Import Configuration described above.</li>
+</ul>
+<div class="hts-messages hts-messages--info hts-messages--withtitle hts-messages--withicon ">    		<div class="hts-messages hts-messages--info    "   >
+    			    			    				<p>
+    					Epicflow system doesn’t allow multiple connection to one instance.Only one connection per instance.    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		</div>
+<h1 id="edit-connection" >Edit connection</h1>
+<p>To edit any previously created connection you would need to</p>
+<ul>
+<li>navigate to the Import page.</li>
+<li>by calling a context menu as on screenshot select option “Edit”. As result you’ll be redirected to the Connection Configuration page.</li>
+<li>going step by step you will be able to edit configuration but for final apply of such changes all steps must be covered and “Import” button should be clicked as designed.</li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-2075" src="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/CSV-Import-Connection-Editing.jpg" alt="" width="1211" height="232" /></p>
+<p style="text-align: center;"><b><i>Screen #14 &#8211; CSV Import &#8211; Connection editing </i></b></p>
+<p>The system will allow you to specify new rules and add projects you’d like to import OR remove an established connection from the list. At the end you’ll be asked to confirm your actions and in case you approve, all changes will be implemented.</p>
+<h1 id="delete-connection" >Delete connection</h1>
+<p>To delete any previously created connection you would need to</p>
+<ul>
+<li>navigate to the Import page.</li>
+<li>by calling a context menu as on screenshot select option “Delete”.You’ll be asked for confirmation of your action.</li>
+<li>As soon as you confirm your action Connection link will be removed as well as all projects related to that with the corresponding resource pool and mapping links. Nevertheless internal Epicflow users and groups will remain.Repeat Connection configuration will be treated by system as a new one and no historical or configuration data will be restored.</li>
+</ul>
+<h1 id="troubleshooting" >Troubleshooting</h1>
+<p>General recommendation is to communicate with Support department in case of any questions or issues related to the files upload.</p>
+<p>Nevertheless several hints that can be used in case of issue with files upload:</p>
+<ul>
+<li>Incorrect dates format is specified either in Project or Resource Pool file</li>
+<li><strong>&#8220;UID_Summary&#8221;</strong> field contains not the Summary id but id of a Task or Milestone</li>
+<li> <strong>&#8220;Res_UID&#8221;</strong> or <strong>&#8220;Res_Name&#8221; </strong>or <strong>&#8220;Group_UID&#8221;</strong> in the Project file contains incorrect or none existing values in Resource Pool file.</li>
+</ul>
+
+				
+			</div>
+
+							<div class="hkb-article__lastupdated" itemprop="dateModified">
+					Updated on March 10, 2020				</div>
+			
+			
+
+
+			
+<div class="hkb-article-tags">
+	</div>
+
+			
+<div class="hkb-feedback">
+	<span class="hkb-feedback__title">Was this article helpful?</span>
+					<div class="ht-voting" id ="ht-voting-post-190">
+								
+			
+<div class="ht-voting-links ht-voting-none">
+	<a class="ht-voting-upvote enabled" rel="nofollow" role="button" data-direction="up" data-type="post" data-nonce="7c28d80bdd" data-id="190" data-allow="1" data-display="standard" href="#">
+		<i class="hkb-upvote-icon"></i>
+		<span>Yes</span>
+	</a>
+	<a class="ht-voting-downvote enabled" rel="nofollow" role="button" data-direction="down" data-type="post" data-nonce="7c28d80bdd" data-id="190" data-allow="1" data-display="standard" href="#">
+		<i class="hkb-upvote-icon"></i>
+		<span>No</span>
+	</a>
+</div>
+	<!-- no new vote -->
+
+							</div>
+			</div>
+			
+							
+
+<!-- .hkb-article__related -->     
+	<section class="hkb-article-related">
+		<h3 class="hkb-article-related__title">Related Articles</h3>
+		<ul class="hkb-article-list">
+		
+			<li class="hkb-article-list__format-standard">
+				<a href="https://wiki-stage.epicflow.com/knowledge-base/data-export/">Report Export</a>
+			</li>
+
+		
+			<li class="hkb-article-list__format-standard">
+				<a href="https://wiki-stage.epicflow.com/knowledge-base/manage-tasks-in-jira/">Managing Tasks in JIRA</a>
+			</li>
+
+		
+			<li class="hkb-article-list__format-standard">
+				<a href="https://wiki-stage.epicflow.com/knowledge-base/step-by-step-integration-with-csv-project/">Step By Step Integration with CSV Project</a>
+			</li>
+
+		
+			<li class="hkb-article-list__format-standard">
+				<a href="https://wiki-stage.epicflow.com/knowledge-base/how-to-step-by-step/">Step By Step integration with MS Project</a>
+			</li>
+
+		
+			<li class="hkb-article-list__format-standard">
+				<a href="https://wiki-stage.epicflow.com/knowledge-base/automatic-report-generator/">Automatic Report Generator</a>
+			</li>
+
+		
+			<li class="hkb-article-list__format-standard">
+				<a href="https://wiki-stage.epicflow.com/knowledge-base/excel-to-odbc/">Excel to ODBC</a>
+			</li>
+
+				</ul>
+	</section>
+<!-- /.hkb-article__related -->
+
+			
+			
+		</article>
+
+		
+		</div>
+
+	
+	
+</div>
+</div>
+
+<!-- .site-footer -->
+<footer class="site-footer" itemscope itemtype="https://schema.org/WPFooter">
+<div class="ht-container">
+
+					<nav class="nav-footer">
+			<div class="menu-navigation-menu-container"><ul id="menu-navigation-menu-1" class=""><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-313"><a href="/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-302"><a href="https://wiki-stage.epicflow.com/release-notes/">Release Notes</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="https://wiki-stage.epicflow.com/faq/">FAQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-342"><a href="https://wiki-stage.epicflow.com/documentation/">Docs and Media</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1466"><a href="https://wiki-stage.epicflow.com/downloads/">Downloads</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-318"><a href="https://wiki-stage.epicflow.com/contact-us/">Contact Us</a></li>
+</ul></div>		</nav>
+	
+</div>
+</footer> 
+<!-- /.site-footer -->
+
+
+<style type="text/css">
+<!--
+
+
+
+#goog-gt-tt,
+.goog-tooltip,
+.goog-tooltip:hover {
+	display: none !important;
+}
+.goog-text-highlight {
+	background-color: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+.translated-rtl font,
+.translated-ltr font {
+	background-color: transparent !important;
+	box-shadow: none !important;
+	box-sizing: border-box !important;
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+}
+
+-->
+</style>
+
+
+
+
+<script type="text/javascript">
+/*<![CDATA[*/
+function initializeGoogleTranslateElement() {
+	new google.translate.TranslateElement({
+		autoDisplay: false,
+		pageLanguage: "en",
+		floatPosition: google.translate.TranslateElement.FloatPosition.TOP_RIGHT
+	});
+}
+/*]]>*/
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=initializeGoogleTranslateElement"></script><script type="text/javascript" id="ht-kb-frontend-scripts-js-extra">
+/* <![CDATA[ */
+var voting = {"ajaxurl":"https:\/\/wiki-stage.epicflow.com\/wp-admin\/admin-ajax.php","ajaxnonce":"492877fa01"};
+var hkbJSSettings = {"liveSearchUrl":"https:\/\/wiki-stage.epicflow.com?ajax=1&ht-kb-search=1&s=","focusSearchBox":"","keepTypingPrompt":"<ul id=\"hkb\" class=\"hkb-searchresults\" role=\"listbox\"><li class=\"hkb-searchresults__noresults\" role=\"option\"><span>Keep typing for live search results<\/span> <\/li><\/ul>","triggerLength":"3"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/ht-knowledge-base/dist/ht-kb-frontend.min.js?ver=3.15.0" id="ht-kb-frontend-scripts-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/ht-shortcodes/modules/messages/ht-shortcodes-messages-frontend.js?ver=1.0" id="ht-shortcodes-messages-frontend-script-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/heroic-glossary/dist/ht-glossary-frontend.js?ver=350" id="htgb-custom-js-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/heroic-blocks/dist/js/ht-blocks-frontend.js?ver=1721715670" id="ht-blocks-frontend-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/heroic-table-of-contents/dist/script.min.js?ver=1721715670" id="ht_toc-script-js-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/themes/knowall/js/js.min.js?ver=6.6.1" id="ht_theme_js-js"></script>
+<script type="text/javascript" id="scrollspy-js-extra">
+/* <![CDATA[ */
+var scrollspyCustomValues = {"offset":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/themes/knowall/js/scrollspy.js?ver=6.6.1" id="scrollspy-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/comment-reply.min.js?ver=6.6.1" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="hkb-toc-scrollspy-js-extra">
+/* <![CDATA[ */
+var hkbTOCSettings = {"htTOCWidgetScollspyViewOffset":"0"};
+var hkbTOCSettings = {"htTOCWidgetScollspyViewOffset":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/ht-knowledge-base/js/hkb-toc-scrollspy.min.js?ver=3.15.0" id="hkb-toc-scrollspy-js"></script>
+
+</div>
+<!-- /.ht-site-container -->
+</body>
+</html>

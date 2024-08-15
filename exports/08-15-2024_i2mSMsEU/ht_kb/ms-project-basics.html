@@ -1,0 +1,1182 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<title>MS-Project basics &#8211; Wiki.Epicflow</title>
+<style type="text/css">.wpfts-result-item .wpfts-smart-excerpt {}.wpfts-result-item .wpfts-smart-excerpt b {font-weight:bold !important;}.wpfts-result-item .wpfts-not-found {color:#808080;font-size:0.9em;}.wpfts-result-item .wpfts-score {color:#006621;font-size:0.9em;}.wpfts-shift {margin-left:40px;}.wpfts-result-item .wpfts-download-link {color:#006621;font-size:0.9em;}.wpfts-result-item .wpfts-file-size {color:#006621;font-size:0.9em;}.wpfts-result-item .wpfts-sentence-link {text-decoration:none;cursor:pointer;color:unset;}.wpfts-result-item .wpfts-sentence-link:hover {text-decoration:underline;color:inherit;}.wpfts-result-item .wpfts-word-link {text-decoration:none;cursor:pointer;}.wpfts-result-item .wpfts-word-link:hover {text-decoration:underline;}wpfts-highlight.wpfts-highlight-sentence {background-color:rgba(255, 255, 128, 0.5) !important;display:inline-block;}wpfts-highlight.wpfts-highlight-word {background-color:rgba(255, 128, 128, 0.5) !important;display:inline-block;}</style><meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" type="application/rss+xml" title="Wiki.Epicflow &raquo; Feed" href="https://wiki-stage.epicflow.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Wiki.Epicflow &raquo; Comments Feed" href="https://wiki-stage.epicflow.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Wiki.Epicflow &raquo; MS-Project basics Comments Feed" href="https://wiki-stage.epicflow.com/knowledge-base/ms-project-basics/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/wiki-stage.epicflow.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/block-library/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio :where(figcaption){color:#ffffffa6}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed :where(figcaption){color:#ffffffa6}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:#ffffffa6}:root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:#ffffffa6}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table :where(figcaption){color:#ffffffa6}.wp-block-video :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video :where(figcaption){color:#ffffffa6}.wp-block-video{margin:0 0 1em}:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<link rel='stylesheet' id='wp-components-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/components/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-preferences-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/preferences/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-editor-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/block-editor/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-reusable-blocks-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/reusable-blocks/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-patterns-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/patterns/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-editor-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/editor/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='htgb-style-css-css' href='https://wiki-stage.epicflow.com/wp-content/plugins/heroic-glossary/dist/blocks.style.build.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ht-blocks-modules-styles-css' href='https://wiki-stage.epicflow.com/wp-content/plugins/heroic-blocks/dist/css/ht-blocks-modules-styles.css?ver=1721715670' type='text/css' media='all' />
+<link rel='stylesheet' id='ht_toc-style-css-css' href='https://wiki-stage.epicflow.com/wp-content/plugins/heroic-table-of-contents/dist/blocks.style.build.css?ver=1721715670' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-gray: #28303D;--wp--preset--color--gray: #39414D;--wp--preset--color--theme-default: #00b4b3;--wp--preset--color--blue: #0069e4;--wp--preset--color--purple: #5749a0;--wp--preset--color--orange: #f0644a;--wp--preset--color--green: #46a162;--wp--preset--color--pale-blue: #7994be;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='wpfts_jquery-ui-styles-css' href='https://wiki-stage.epicflow.com/wp-content/plugins/fulltext-search/style/wpfts_autocomplete.css?ver=1723727427' type='text/css' media='all' />
+<link rel='stylesheet' id='heroic-faq-group-gb-block-frontend-style-css' href='https://wiki-stage.epicflow.com/wp-content/plugins/ht-faq/blocks/v1/heroic-faq-group-gb/style.css?ver=1.3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='UserAccessManagerLoginForm-css' href='https://wiki-stage.epicflow.com/wp-content/plugins/user-access-manager/assets/css/uamLoginForm.css?ver=2.2.23' type='text/css' media='screen' />
+<link rel='stylesheet' id='ht-theme-style-css' href='https://wiki-stage.epicflow.com/wp-content/themes/knowall/css/style.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='ht-childtheme-style-css' href='https://wiki-stage.epicflow.com/wp-content/themes/knowall-child/style.css?ver=6.6.1' type='text/css' media='all' />
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/jquery/ui/menu.min.js?ver=1.13.3" id="jquery-ui-menu-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/dist/a11y.min.js?ver=d90eebea464f6c09bfd5" id="wp-a11y-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.13.3" id="jquery-ui-autocomplete-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/fulltext-search/js/wpfts_frontend.js?ver=1723727427" id="wpfts_frontend-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/wp-image-zoooom/assets/js/jquery.image_zoom.min.js?ver=1.57" id="image_zoooom-js"></script>
+<script type="text/javascript" id="image_zoooom-init-js-extra">
+/* <![CDATA[ */
+var IZ = {"with_woocommerce":"0","exchange_thumbnails":"1","woo_categories":"0","enable_mobile":"","options":[],"woo_slider":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/wp-image-zoooom/assets/js/image_zoom-init.js?ver=1.57" id="image_zoooom-init-js"></script>
+<link rel="https://api.w.org/" href="https://wiki-stage.epicflow.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://wiki-stage.epicflow.com/wp-json/wp/v2/ht-kb/530" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://wiki-stage.epicflow.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.6.1" />
+<link rel="canonical" href="https://wiki-stage.epicflow.com/knowledge-base/ms-project-basics/" />
+<link rel='shortlink' href='https://wiki-stage.epicflow.com/?p=530' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://wiki-stage.epicflow.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwiki-stage.epicflow.com%2Fknowledge-base%2Fms-project-basics%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://wiki-stage.epicflow.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwiki-stage.epicflow.com%2Fknowledge-base%2Fms-project-basics%2F&#038;format=xml" />
+<script type="text/javascript">
+		document.wpfts_ajaxurl = "https://wiki-stage.epicflow.com/wp-admin/admin-ajax.php";
+	</script><meta name="generator" content="Heroic FAQs v1.3.0" />
+<!-- HKB CSS Variables --><style>:root {--hkb-main-container-width: 1200px;--hkb-link-color: #2358a1;--hkb-link-color-hover: #2861b0;--hkb-header-style-bg: #2358a1;--hkb-header-style-graddir: 90deg;--hkb-header-style-grad1: #2358a1;--hkb-header-style-grad2: #2358a1;--hkb-header-text-color: #ffffff;}</style><meta name="generator" content="Heroic Knowledge Base v3.15.0" />
+<meta name="generator" content="KnowAll Child Theme v1.15.14" />
+<style type="text/css">img.zoooom,.zoooom img{padding:0!important;}</style><script type="text/javascript"></script><link rel="icon" href="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/favicon.png" sizes="32x32" />
+<link rel="icon" href="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/favicon.png" />
+<meta name="msapplication-TileImage" content="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/favicon.png" />
+<style id="kirki-inline-styles">.site-header{background:#00b4b3;}.site-header .site-header__title, .nav-header ul li a{color:#fff;}.nav-header .nav-header__mtoggle span, .nav-header .nav-header__mtoggle span::before, .nav-header .nav-header__mtoggle span::after{background:#fff;}a{color:#00b4b3;}input[type="reset"], input[type="submit"], input[type="button"], .hkb-article__content ol li:before, .hkb-article__content ul li:before, .hkb_widget_exit__btn{background:#00b4b3;}.hkb-breadcrumbs__icon{fill:#00b4b3;}.hkb-article__title a:hover, .hkb-article__link:hover h2, .ht-post__title a:hover, .hkb-category .hkb-category__articlelist a{color:#00b4b3;}.hkb-article-attachment__icon{fill:#00b4b3;}a:hover, .hkb-category .hkb-category__articlelist a:hover{color:#00a8a8;}button:hover, input[type="reset"]:hover, input[type="submit"]:hover, input[type="button"]:hover, .ht-transferbox__btn:hover{background:#00a8a8;}.ht-container{max-width:1000px;}.ht-sitecontainer--boxed{max-width:1000px;}h1, h2, h3, h4, h5, h6{font-family:Roboto;font-weight:700;text-transform:none;color:#333333;}body, input, optgroup, select, textarea, p{font-family:Roboto;font-size:17px;font-weight:400;line-height:1.55;color:#595959;}.hkb-category .hkb-category__iconwrap, .ht-categoryheader .hkb-category__iconwrap{flex-basis:35px;min-width:35px;}.hkb-category .hkb-category__iconwrap img, .ht-categoryheader .hkb-category__iconwrap img{max-width:35px;}.hkb-category .hkb-category__iconwrap img, .ht-categoryheader .hkb-category__iconwrap img, .hkb-category .hkb-category__iconwrap, .ht-categoryheader .hkb-category__iconwrap, .ht-categoryheader .hkb-category__iconwrap svg{max-height:35px;}.nav-header > ul > li.menu-item-has-children > a::after {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34.1 19' fill='%23ffffff'%3E%3Cpath d='M17 19c-0.5 0-1-0.2-1.4-0.6L0.6 3.4c-0.8-0.8-0.8-2 0-2.8 0.8-0.8 2-0.8 2.8 0L17 14.2 30.7 0.6c0.8-0.8 2-0.8 2.8 0 0.8 0.8 0.8 2 0 2.8L18.4 18.4C18 18.8 17.5 19 17 19z'/%3E%3C/svg%3E");}.ht-container, .ht-sitecontainer--boxed { max-width: 1000px }.hkb-category .hkb-category__link { border-bottom: 1px solid #e6e6e6; } .hkb-category.hkb-category--witharticles { border-bottom: 1px solid #e6e6e6; }.hkb_widget_toc ol li.active > a { background: rgba( 0 ,180, 179, 0.8); }/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</style>	</head>
+<body class="ht_kb-template-default single single-ht_kb postid-530 single-format-standard wp-embed-responsive ht-kb" itemscope itemtype="https://schema.org/WebPage" data-spy="scroll" data-offset="30" data-target="#navtoc">
+<div class="ht-sitecontainer ht-sitecontainer--wide">
+
+<!-- .site-header -->
+<div class="site-header">
+
+	<header class="site-header__banner" itemscope itemtype="http://schema.org/WPHeader">
+	<div class="ht-container">
+
+		<!-- .site-logo -->
+		<div class="site-logo">
+			<a href="https://wiki-stage.epicflow.com" data-ht-sitetitle="Wiki.Epicflow">
+													
+		<img alt="Wiki.Epicflow" src="https://wiki-stage.epicflow.com/wp-content/themes/knowall/img/logo.png" />
+
+														<meta itemprop="headline" content="Wiki.Epicflow">
+							</a>
+		</div>
+		<!-- /.site-logo -->
+
+					<!-- .nav-header -->
+			<nav class="nav-header" itemscope itemtype="https://schema.org/SiteNavigationElement">
+				<button id="ht-navtoggle" class="nav-header__mtoggle"><span>Menu</span></button>
+				<ul id="menu-navigation-menu" class="nav-header__menuwrapper"><li id="menu-item-313" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-313"><a href="/">Home</a></li>
+<li id="menu-item-302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-302"><a href="https://wiki-stage.epicflow.com/release-notes/">Release Notes</a></li>
+<li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="https://wiki-stage.epicflow.com/faq/">FAQ</a></li>
+<li id="menu-item-342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-342"><a href="https://wiki-stage.epicflow.com/documentation/">Docs and Media</a>
+<ul class="sub-menu">
+	<li id="menu-item-3020" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3020"><a href="https://wiki-stage.epicflow.com/glossary/">Glossary</a></li>
+	<li id="menu-item-341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-341"><a href="https://wiki-stage.epicflow.com/software-and-hardware-requirements/">Software and Hardware Requirements</a></li>
+	<li id="menu-item-319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-319"><a href="https://wiki-stage.epicflow.com/api-integration/">API &#038; INTEGRATION</a></li>
+	<li id="menu-item-354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-354"><a rel="privacy-policy" href="https://wiki-stage.epicflow.com/privacy-policy/">Privacy Policy</a></li>
+	<li id="menu-item-1869" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1869"><a href="https://wiki-stage.epicflow.com/video-library/">Video library</a></li>
+	<li id="menu-item-3332" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3332"><a href="https://wiki-stage.epicflow.com/training-materials/">Training Materials</a></li>
+</ul>
+</li>
+<li id="menu-item-1466" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1466"><a href="https://wiki-stage.epicflow.com/downloads/">Downloads</a></li>
+<li id="menu-item-318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-318"><a href="https://wiki-stage.epicflow.com/contact-us/">Contact Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-326"><a href="https://wiki-stage.epicflow.com/about-epicflow/">About Epicflow</a></li>
+	<li id="menu-item-314" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-314"><a href="https://wiki-stage.epicflow.com/submit-a-ticket/">Submit A Ticket</a></li>
+</ul>
+</li>
+</ul>			</nav>
+			<!-- /.nav-header -->
+		
+	</div>
+	</header>
+	<!-- /.site-header -->
+
+	
+	
+
+</div>
+<!-- /.site-header -->
+
+
+<div class="ht-pageheader">
+<div class="ht-container">
+
+	
+<!-- .hkb-breadcrumbs -->
+<div class="hkb-breadcrumbs_wrap">
+			<ol class="hkb-breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList" >
+										<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<a itemprop="item" href="https://wiki-stage.epicflow.com">
+							<span itemprop="name">Home</span>
+							<svg class="hkb-breadcrumbs__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 34.1"><g><path d="M19,17c0,0.5-0.2,1-0.6,1.4L3.4,33.5c-0.8,0.8-2,0.8-2.8,0c-0.8-0.8-0.8-2,0-2.8L14.2,17L0.6,3.4c-0.8-0.8-0.8-2,0-2.8  c0.8-0.8,2-0.8,2.8,0l15.1,15.1C18.8,16,19,16.5,19,17z"/></g></svg>
+						</a>
+										<meta itemprop="position" content="1" />
+				</li>               
+							<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<a itemprop="item" href="https://wiki-stage.epicflow.com/article-categories/training-and-excercises/">
+							<span itemprop="name">Training and Exercises</span>
+							<svg class="hkb-breadcrumbs__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 34.1"><g><path d="M19,17c0,0.5-0.2,1-0.6,1.4L3.4,33.5c-0.8,0.8-2,0.8-2.8,0c-0.8-0.8-0.8-2,0-2.8L14.2,17L0.6,3.4c-0.8-0.8-0.8-2,0-2.8  c0.8-0.8,2-0.8,2.8,0l15.1,15.1C18.8,16,19,16.5,19,17z"/></g></svg>
+						</a>
+										<meta itemprop="position" content="2" />
+				</li>               
+							<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span>
+							<span itemprop="name">MS-Project basics</span>
+							<link itemprop="item" href="https://wiki-stage.epicflow.com/knowledge-base/ms-project-basics/" />
+						</span> 
+										<meta itemprop="position" content="3" />
+				</li>               
+					</ol>       
+	</div>  
+<!-- /.hkb-breadcrumbs -->
+	
+<form class="hkb-site-search" method="get" action="https://wiki-stage.epicflow.com/">
+		<label class="hkb-screen-reader-text" for="hkb-search">Search For</label>
+		<input id="hkb-search" class="hkb-site-search__field" type="text" value="" placeholder="Search the knowledge base..." name="s" autocomplete="off">
+		<img class="hkb-site-search__loader" src="https://wiki-stage.epicflow.com/wp-content/themes/knowall/img/loading.svg" alt="Searching..." />
+		<input type="hidden" name="ht-kb-search" value="1" />
+    	<input type="hidden" name="lang" value=""/>
+		<button class="hkb-site-search__button" type="submit"><span>Search</span></button>
+</form>
+
+</div>
+</div>
+
+<!-- .ht-page -->
+<div class="ht-page ht-page--sidebarleft">
+<div class="ht-container">
+
+			<!-- .sidebar -->
+	<aside class="sidebar sidebar--sticky" itemscope itemtype="https://schema.org/WPSideBar">
+		<section id="ht-kb-toc-widget-3" class="widget hkb_widget_toc"><h3 class="widget__title">Contents</h3>            <nav id="navtoc" role="navigation">
+
+                
+
+            <ol class="nav"><!-- adding li --><li class="active"><a href="#gantt-network-and-resource-view">Gantt, Network and Resource view</a><!-- adding level --><ol><li><a href="#gantt-chart">Gantt Chart</a><!-- adding li --></li><li class=""><a href="#network-diagram">Network Diagram</a><!-- adding li --></li><li class=""><a href="#resource-sheet">Resource sheet</a><!-- removing level --></li></ol></li><li><a href="#defining-project-settings">Defining Project Settings</a><!-- adding level --><ol><li><a href="#open-project">Open Project</a><!-- adding li --></li><li class=""><a href="#project-manager">Project Manager</a><!-- adding li --></li><li class=""><a href="#project-title">Project Title</a><!-- adding li --></li><li class=""><a href="#epicflow-start-end-date">Epicflow Start &amp; End Date</a><!-- adding li --></li><li class=""><a href="#msp-project-start-date">MSP Project Start date </a><!-- adding li --></li><li class=""><a href="#project-status-date">Project Status Date</a><!-- removing level --></li></ol></li><li><a href="#defining-tasks">Defining Tasks</a><!-- adding level --><ol><li><a href="#creating-a-new-task">Creating a new task</a><!-- adding li --></li><li class=""><a href="#adding-the-summary-tasks">Adding the Summary tasks</a><!-- adding li --></li><li class=""><a href="#defining-task-relations">Defining Task Relations</a><!-- adding li --></li><li class=""><a href="#assigning-resources">Assigning Resources</a><!-- adding li --></li><li class=""><a href="#defining-work-hours">Defining work hours</a><!-- adding li --></li><li class=""><a href="#creating-milestones">Creating Milestones</a><!-- adding li --></li><li class=""><a href="#creating-uclt-task">Creating UCLT task</a><!-- removing level --></li></ol></li><li><a href="#defining-the-resource-pool">Defining the Resource pool</a><!-- adding level --><ol><li><a href="#add-resource">Add Resource</a><!-- adding li --></li><li class=""><a href="#add-new-group">Add New Group</a><!-- adding li --></li><li class=""><a href="#add-special-uclt-group">Add special UCLT Group</a><!-- adding li --></li><li class=""><a href="#add-resource-to-multiple-groups">Add resource to Multiple Groups</a><!-- adding li --></li><li class=""><a href="#connect-project">Connect Project</a><!-- adding li --></li><li class=""><a href="#unlink-project">Unlink Project</a><!-- adding li --></li><li class=""><a href="#delete-resource">Delete Resource</a><!-- adding li --></li><li class=""><a href="#delete-group">Delete Group</a><!-- removing level --></li></ol></li><li><a href="#troubleshooting">Troubleshooting</a><!-- adding level --><ol><li><a href="#cant-open-resource-pool-in-read-write-mode">Can't open resource pool in read-write mode</a><!-- adding li --></li><li class=""><a href="#unintentionally-added-resources-to-pool">Unintentionally added resources to pool</a><!-- adding li --></li><li class=""><a href="#cant-delete-a-resource-from-pool">Can't delete a resource from pool</a><!-- adding li --></li><li class=""><a href="#projects-not-found-when-opening-master-file">Projects not found when opening master file</a><!-- adding li --></li><li class=""><a href="#project-synchronization-issue">Project Synchronization issue</a></li></ol></li></ol><!-- /ht-kb-toc-widget -->
+            </nav>
+
+            </section>	</aside>
+	<!-- /.sidebar -->
+
+	
+		<div class="ht-page__content">
+		<article class="hkb-article post-530 ht_kb type-ht_kb status-publish format-standard hentry ht_kb_category-training-and-excercises" itemscope itemtype="https://schema.org/CreativeWork">
+		<meta itemprop="datePublished" content="September 8, 2018">
+
+			<header class="hkb-article__header">
+				<h1 class="hkb-article__title" itemprop="headline">MS-Project basics</h1>
+			</header>
+
+			<div class="ht-mobile-toc"><strong class="ht-mobile-toc__title">Contents</strong>            <nav id="navtoc" role="navigation">
+
+                
+
+            <ol class="nav"><!-- adding li --><li class="active"><a href="#gantt-network-and-resource-view">Gantt, Network and Resource view</a><!-- adding level --><ol><li><a href="#gantt-chart">Gantt Chart</a><!-- adding li --></li><li class=""><a href="#network-diagram">Network Diagram</a><!-- adding li --></li><li class=""><a href="#resource-sheet">Resource sheet</a><!-- removing level --></li></ol></li><li><a href="#defining-project-settings">Defining Project Settings</a><!-- adding level --><ol><li><a href="#open-project">Open Project</a><!-- adding li --></li><li class=""><a href="#project-manager">Project Manager</a><!-- adding li --></li><li class=""><a href="#project-title">Project Title</a><!-- adding li --></li><li class=""><a href="#epicflow-start-end-date">Epicflow Start &amp; End Date</a><!-- adding li --></li><li class=""><a href="#msp-project-start-date">MSP Project Start date </a><!-- adding li --></li><li class=""><a href="#project-status-date">Project Status Date</a><!-- removing level --></li></ol></li><li><a href="#defining-tasks">Defining Tasks</a><!-- adding level --><ol><li><a href="#creating-a-new-task">Creating a new task</a><!-- adding li --></li><li class=""><a href="#adding-the-summary-tasks">Adding the Summary tasks</a><!-- adding li --></li><li class=""><a href="#defining-task-relations">Defining Task Relations</a><!-- adding li --></li><li class=""><a href="#assigning-resources">Assigning Resources</a><!-- adding li --></li><li class=""><a href="#defining-work-hours">Defining work hours</a><!-- adding li --></li><li class=""><a href="#creating-milestones">Creating Milestones</a><!-- adding li --></li><li class=""><a href="#creating-uclt-task">Creating UCLT task</a><!-- removing level --></li></ol></li><li><a href="#defining-the-resource-pool">Defining the Resource pool</a><!-- adding level --><ol><li><a href="#add-resource">Add Resource</a><!-- adding li --></li><li class=""><a href="#add-new-group">Add New Group</a><!-- adding li --></li><li class=""><a href="#add-special-uclt-group">Add special UCLT Group</a><!-- adding li --></li><li class=""><a href="#add-resource-to-multiple-groups">Add resource to Multiple Groups</a><!-- adding li --></li><li class=""><a href="#connect-project">Connect Project</a><!-- adding li --></li><li class=""><a href="#unlink-project">Unlink Project</a><!-- adding li --></li><li class=""><a href="#delete-resource">Delete Resource</a><!-- adding li --></li><li class=""><a href="#delete-group">Delete Group</a><!-- removing level --></li></ol></li><li><a href="#troubleshooting">Troubleshooting</a><!-- adding level --><ol><li><a href="#cant-open-resource-pool-in-read-write-mode">Can't open resource pool in read-write mode</a><!-- adding li --></li><li class=""><a href="#unintentionally-added-resources-to-pool">Unintentionally added resources to pool</a><!-- adding li --></li><li class=""><a href="#cant-delete-a-resource-from-pool">Can't delete a resource from pool</a><!-- adding li --></li><li class=""><a href="#projects-not-found-when-opening-master-file">Projects not found when opening master file</a><!-- adding li --></li><li class=""><a href="#project-synchronization-issue">Project Synchronization issue</a></li></ol></li></ol><!-- /ht-kb-toc-widget -->
+            </nav>
+
+            </div>
+			<div class="hkb-article__content" itemprop="text">
+
+				<p>You will learn:</p>
+<ul>
+<li>To create an MSP plan that can be used by Epicflow</li>
+<li>Define tasks and relations in MSP</li>
+<li>Make a detailed plan with milestones, resources, work estimations, relations</li>
+</ul>
+<p><span style="font-weight: 400;">To start, use the project plan template found by the next link <a href="https://wiki-stage.epicflow.com/downloads/">MS Project Templates</a>. It is not mandatory to use this template, but the settings are optimized for Epciflow usage. The screenshots in this wiki can differ depending on you MS-project version, but Epicflow supports all versions from version 2010 on.</span></p>
+<p><span style="font-weight: 400;">We also recommend reading the wiki of <a href="https://wiki-stage.epicflow.com/index.php/knowledge-base/minimum-planning-prerequisites/">Minimum planning prerequisites</a> to prevent you to create too complicated and unmanageable project plans. </span></p>
+<h1 id="gantt-network-and-resource-view" >Gantt, Network and Resource view</h1>
+<p>A project plan can be represented in different ways. In the <a href="https://wiki-stage.epicflow.com/downloads/">MS Project Templates</a><span style="font-weight: 400;">, we created an optimized Gantt, Network and Resource view for Epicflow, but you can use any view you like. The advantage of using the Epicflow views is that the custom fields have the appropriate names. In the MS-project View menu, you can switch between any view you like. To plan a project we prefer to add tasks, resources and work in the Gantt view. To analyze relations between task we prefer the network view. To view the resources we prefer the resource sheet.</span></p>
+<p>You can also use our demo files to play with. &lt;add files&gt;</p>
+<h2 id="gantt-chart" >Gantt Chart</h2>
+<p><span style="font-weight: 400;"> Select View-&gt; Gant chart -&gt; Epicflow Gantt to view the Gantt chart. The main fields used by Epicflow are the Task Name, Resource Name, Predecessor, remaining work, actual work and the Deadline column. Start and end dates are not important for Epicflow since it is optimizing the load between the deadlines specified by the milestones. (Denoted by the green arrows at red marked tasks)</span></p>
+<p><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-537" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/gantt-view.jpg" alt="" width="1319" height="509" /></p>
+<p style="text-align: center;"><b><i>Screen #1 &#8211; MS Project &#8220;Epicflow Gantt&#8221; view</i></b></p>
+<p>You can personalise the view by moving, insert or hiding columns. To insert/hide a column you have to right-click on the column name to select the option you want. To move you have to select the column by click-hold and move.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-564" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/insert-column.jpg" alt="" width="993" height="467" /></p>
+<p style="text-align: center;"><b><i>Screen #2 &#8211; Adding Columns</i></b></p>
+<p>Epicflow custom fields are:</p>
+<ul>
+<li>Start milestone(flag 13); Denotes if the milestone has to be regarded by Epciflow as the start date of the project.</li>
+<li>Internal due date(flag 11); Denotes if the milestone has to be regarded by Epciflow as the end date of the project.</li>
+</ul>
+<p>Make sure you have only one start and internal due date flag set.</p>
+<h2 id="network-diagram" >Network Diagram</h2>
+<p><span style="font-weight: 400;"> Select View-&gt; Network Diagram -&gt; Epicflow Network to view the Network Diagram. This diagram represents the same project as shown in the Gantt Chart above. However, the focus in the Network diagram is on the logical order of your tasks instead of the start and end times of the tasks. The network diagram is also called a Pert Chart.</span></p>
+<p><img decoding="async" class="aligncenter size-full wp-image-538" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/network-view.jpg" alt="" width="1318" height="606" /></p>
+<p style="text-align: center;"><b><i>Screen #3 &#8211; Network Diagram</i></b></p>
+<p>The first time you open the network view it can be a mess. You can organise this by right-clicking outside the blocks and select “Layout now”. Or selecting the blocks you want to organize and select Layout Selection/Related task now.</p>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-557" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/layout-network.jpg" alt="" width="738" height="301" /></p>
+<p style="text-align: center;"><b><i>Screen #4 &#8211; Ordering Network View </i></b></p>
+<p>Try yourselves:</p>
+<ul>
+<li>For the summary task (like building phase), try to expand and collapse them by clicking on the + and &#8211; sign to see what happens</li>
+<li>Click on a task and switch to Gantt view. Now the same task is selected in the Gantt view. Go back and forward to Network view and also check the effect of collapsing summary tasks in both views.</li>
+<li>What happens to the network if the duration changes in the Gantt?</li>
+<li>What happens to the network if the task is rescheduled?</li>
+<li>Try to draw a rectangle in the network view. Now a new task is created. Problem is that it is not always obvious to which summary task this task belongs. But you can jump back to the Gantt Chart to view this.</li>
+</ul>
+<h2 id="resource-sheet" >Resource sheet</h2>
+<p><span style="font-weight: 400;">Select View-&gt; Resource Sheet -&gt; Epicflow Resource Sheet to view all the resources that can be used in your project. We will discuss you connect to a resource pool here. For now, we will explain the main set-up.</span></p>
+<p>In Epicflow we can assign a task to a resource group or to a specific resource of a group. MSP does not support assignment to resource groups. That&#8217;s why we create a special resource for that and added a few extra columns to the resource sheet that we will explain now.</p>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1299" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/10/Resource-Sheet.jpg" alt="" width="609" height="521" /></p>
+<p style="text-align: center;"><b><i>Screen #5 &#8211; Tasks Assignment </i></b></p>
+<p>The resource sheet Columns:</p>
+<ul>
+<li>R &amp;G;  An Epicflow custom field (Text 23) to denote is an item is a Group or a Resource. R=Resource, G=Group. So &#8220;Carpenter&#8221; is a group and &#8220;Cap-res1&#8221; is a resource of this group.</li>
+<li>Group: An default MSP field.  When making the “Resource Group” visible in the Gantt Chart it allows you to see to which group the resource belongs. This field is not used by Epicflow, it&#8217;s not mandatory to use it.</li>
+<li>Unique ID: MSP field that identifies the resource. Note that the ID changes when open or close a shared resource pool. Epicflow uses the resource name as an identifier.</li>
+<li>May Units;<span style="font-weight: 400;"> Defines resource’s capacity where 100% is equal to 1 FTE. </span>Since the capacity is defined in Epciflow, changing this column has no effect for Epicflow.</li>
+</ul>
+<p>There are many other settings for resources, although they can influence your schedule in the Gantt Chart, they all have no effect on Epicflow.</p>
+<h1 id="defining-project-settings" >Defining Project Settings</h1>
+<h2 id="open-project" >Open Project</h2>
+<p>When open a specific Projects attached to the Resource Pool you are going to see next request:</p>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-780" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/Open-Project.jpg" alt="" width="403" height="212" /></p>
+<p style="text-align: center;"><b><i>Screen #6 – Open Resource Pool request on Project Opening</i></b></p>
+<p style="text-align: left;"><span style="font-weight: 400;">We would recommend to select &#8220;Do not open other files&#8221; when working with Project itself.</span></p>
+<p>For the Projects not connected to the Resource Pool such popup doesn&#8217;t appear and you need to set such connection. More detailed description how to do it is presented bellow in Defining the Resource Pool -&gt; Connect Project paragraph.</p>
+<h2 style="text-align: left;" id="project-manager" ><strong>Project Manager</strong></h2>
+<p>The project managers field in MSP is used by Epicflow to denote the project manager of the project.</p>
+<ul>
+<li><span style="font-weight: 400;">Click on the &#8220;File&#8221; tab in MS Project (left top corner of the MS Project menu )</span></li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-628" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/Adding-PM.jpg" alt="" width="741" height="322" /></p>
+<p style="text-align: center;"><b><i>Screen #7 – Adding PM</i></b></p>
+<ul>
+<li><span style="font-weight: 400;">Click on the &#8220;Project Information&#8221;-&gt; &#8220;Info&#8221; and select “Advanced Properties” item from the appeared context menu</span></li>
+</ul>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-478 aligncenter" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/MS-Project-Advanced-Properties.jpg" alt="" width="1251" height="744" /></p>
+<p style="text-align: center;"><b><i>Screen #8 – Advanced Properties</i></b></p>
+<ul>
+<li><span style="font-weight: 400;">In newly appeared window select “Summary” tab and specify Project Manager’s name in “Manager” field</span></li>
+</ul>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-479 aligncenter" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/Project-Properties-Summary.jpg" alt="" width="389" height="472" /></p>
+<p style="text-align: center;"><b><i>Screen #9 – Project Properties</i></b></p>
+<h2 id="project-title" >Project Title</h2>
+<p>In the same menu as above, you can also specify the project name in the &#8220;Title&#8221; field. This title will become the project name used in Epciflow. This title corresponds with the project summary task name at line 0 of the Gantt Chart. If line 0 is not visible in the Gantt Chart you can configure this in the File-&gt;Options menu.</p>
+<h2 id="epicflow-start-end-date" >Epicflow Start &amp; End Date</h2>
+<p>The start date of an Epicflow project is defined by the &#8220;Deadline&#8221; of the milestone marked as &#8220;Start Milestone&#8221;. The project end date or internal due date is defined by the milestone marked as &#8220;Int Due Date&#8221;. A task is regarded as a milestone by Epciflow when the duration is 0, no resource is attached and has a defined Deadline. (see picture below)</p>
+<p>When using the <a href="https://wiki-stage.epicflow.com/downloads/">MS Project Templates</a><span style="font-weight: 400;">, </span>then the start and end milestone are already defined and one only has to specify the &#8220;Deadline&#8221;. When not using the template, one has to set flags which are associated with the milestones.  &#8220;Flag 13&#8221; as &#8220;Start Milestone&#8221;, &#8220;Flag 11&#8221; as &#8220;Int Due Date.&#8221; However, its strongly advised renaming these &#8220;Flag&#8221; columns to the names mentioned. (Right-Click on the column header and select &#8220;Custom Fields&#8221;-&gt; Rename)</p>
+<p>There are two ways to specify the Epicflow Start &amp; End date. The recommended option is to add the Resource name, Deadline, Duration, Milestone, Start Milestone and Int Due Date to the Gantt chart and to set the values as specified in the picture below (See above at Gantt chart how to insert the required columns).</p>
+<p><img loading="lazy" decoding="async" class="aligncenter wp-image-579" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/start-end-ms5.jpg" alt="" width="673" height="178" /></p>
+<p style="text-align: center;"><b><i>Screen #10 – Start End Date milestones</i></b></p>
+<p>The second way is to double click on the task name. <span style="font-weight: 400;"> In the&#8221;advanced&#8221; tab of the pop-up window, set the ‘deadline’ to the appropriate date. In the &#8220;Custom Fields&#8221; tab set the &#8220;Int Due Date&#8221; or &#8220;Start Milestone&#8221; flag to the appropriate value.</span></p>
+<p><img loading="lazy" decoding="async" class="aligncenter wp-image-584" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/taskpopup-adv.jpg" alt="" width="458" height="278" /></p>
+<p><img loading="lazy" decoding="async" class="aligncenter wp-image-583" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/startmilestone-custom-field-adv.jpg" alt="" width="472" height="291" /></p>
+<p><span style="font-weight: 400;">The &#8220;mark as milestone&#8221; checkbox is automatically set for a task with duration zero without resources. Setting the start date or the ‘Constraint date’ of the milestone is not mandatory, Epciflow will neglect this date. Epicflow only takes the Deadline into account of Milestones.</span></p>
+<h2 id="msp-project-start-date" ><span style="font-weight: 400;">MSP Project Start date </span></h2>
+<p>When you create a new project it is not mandatory, but advised, to configure the project settings. First Select Project-&gt;Project information.  By specifying the project start date in the project information menu you prevent that task without a predecessor are scheduled at an unexpected date. This field is not used by Epicflow as a start tase since Epicflow uses the deadline of the start milestone for that, but it makes life easier for you.</p>
+<p><img loading="lazy" decoding="async" class="aligncenter wp-image-567" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/project-information.jpg" alt="" width="546" height="450" /></p>
+<p style="text-align: center;"><b><i>Screen #11 – Project Information</i></b></p>
+<h2 id="project-status-date" >Project Status Date</h2>
+<p style="text-align: left;">The &#8220;Status date&#8221;, as displayed above, is used by MSP to wrap updated tasks around the status date. Since many of our users find this highly inconvenient we switched off all these advanced setting in our template. If you choose to use the status date, make sure its always set to the correct date before you update tasks and sync with Epicflow.</p>
+<h1 id="defining-tasks" >Defining Tasks</h1>
+<h2 id="creating-a-new-task" >Creating a new task</h2>
+<p><span style="font-weight: 400;">When working with tasks, you first go to the &#8220;Task&#8221; tab to see the menu bar as displayed in the figure below. There are 3 ways to in</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">To add a new task click on the line BELOW where the new task must be added. </span></li>
+<li>There are 3 ways to insert a new task:
+<ul>
+<li>Press the &#8220;Insert&#8221; button</li>
+<li>Press the <span style="font-weight: 400;"> “Task” item in the menu bar as we have highlighted below.</span></li>
+<li>Right-click on the task below and select &#8220;Insert Task&#8221;</li>
+</ul>
+</li>
+<li>You can now specify the task name</li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-590" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/insert-task-menu.jpg" alt="" width="1007" height="607" /></p>
+<p style="text-align: center;"><b><i>Screen #12 – Adding new task</i></b></p>
+<h2 style="text-align: left;" id="adding-the-summary-tasks" ><strong>Adding the Summary tasks</strong></h2>
+<p>As soon as you have specified list of tasks and ordered those accordingly, you can perform grouping of such and create summary tasks of a different level with any hierarchy you would need to.</p>
+<ul>
+<li>To achieve it you would need to add a new task which will be converted into the summary task later. Note that its location should be right above the list of tasks which will be a part of it.</li>
+<li>Select task by left mouse button click which you would like to convert into sub-task and press on &#8220;Indent task&#8221; button at &#8220;Task&#8221; menu tab.</li>
+<li>To perform the action for multiple selection you would need to select all required tasks with pressed &#8220;shift&#8221; button. As soon as it done press on &#8220;Indent task&#8221; button at &#8220;Task&#8221; menu tab.</li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-629" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/Sub-task-creation2.jpg" alt="" width="1062" height="422" /></p>
+<p style="text-align: center;"><b><i>Screen #13 – Sub-task creation</i></b></p>
+    		<div class="hts-messages hts-messages--info  hts-messages--withtitle hts-messages--withicon "   >
+    			<span class="hts-messages__title">NOTE</span>    			    				<p>
+    					</p>
+<p><strong>To the left from &#8220;Indent task&#8221; button, at &#8220;Task&#8221; menu bar, you&#8217;ll have &#8220;Outdent task&#8221; button which can be used to create hierarchy in opposite direction or undo shifting. </strong></p>
+<p>    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<h2 id="defining-task-relations" >Defining Task Relations</h2>
+<p>Creating a network of relations between tasks is essential to benefit from the power from the Epicflow algorithms to calculate priorities and the resource load. There are multiple ways to define relations between tasks:</p>
+<ul>
+<li style="font-weight: 400;"><b>Predecessors: </b>Specify in this column the preceding task(s). I<span style="font-weight: 400;">f no preceding task is defined, then the preceding task of the summary task is used. If none of the higher layer summary tasks has a defined predecessor than Epicflow uses the Start milestone as the starting date. </span></li>
+<li><b>Successors</b><span style="font-weight: 400;">: Specify in this column the successor(s) of this task. A best practice is to first define the predecessors (and even hide this column) and finally check if there are tasks without successors. For tasks without a successor, the successor of the summary task will be used. If none of the higher layer summary tasks has a successor then Epicflow automatically uses the finish date of the highest layer summary task as a &#8220;virtual&#8221; milestone. In the Epicflow this automatically created milestone is denoted by an &#8220;a&#8221; next to the milestone sign in the pipeline page. Try to avoid having automatically created milestones by creating a clear network of relations.</span></li>
+<li><strong>By dragging</strong>: This is convenient when the tasks are displayed close to each other. See for example in the red rectangle below. Hover over a task and click-and-hold your mouse and drag now to the task you want to create a relation with. A link will be created when releasing the mouse if you see the link icon. You can delete a link by double-clicking on the link and selecting &#8220;Delete&#8221;.</li>
+<li><strong>&#8220;link&#8221; option in Task menu:</strong> This is convenient when you have a sequence of multiple tasks. Select first all tasks that must be linked. Pressing the &#8220;link&#8221; button will create a chain of tasks for all selected tasks.</li>
+<li><strong>Network Diagram: </strong>Convenient to check if you have a well-defined network and to modify relations. Select the network view (View -&gt; Network diagram). Creating a relation works similar to the dragging option in the Gantt Chart by click-hold-drag from one task to the other. By double clicking on a relation, you get the option to delete a relation.</li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter wp-image-592" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/create-link.jpg" alt="" width="678" height="268" /></p>
+<p style="text-align: center;"><b><i>Screen #14 – Task relations</i></b></p>
+<h2 id="assigning-resources" >Assigning Resources</h2>
+<p>To allocate resource for the task you need to have created Resource Pool and connect the project to it. Additional information how to do it is granted in separate items here at the page. (&#8220;<strong>Upload the project</strong>&#8221; and &#8220;<strong>Creating Resource Pool, the basics</strong>&#8220;). In Epicflow only tasks with resources assigned to it will appear in the task list.</p>
+<p>We describe 4 different ways to add resources to tasks.</p>
+<ol>
+<li>Select cell &#8220;Resource Names&#8221; of the appropriate task and set checkbox for those resources which you would like to arrange for the task fulfilment.</li>
+<li>In case if you have multiple resources assigned for one task and would like to specify a different amount of work for each of such you:
+<ul>
+<li>select &#8220;View&#8221; tab and press &#8220;Other View&#8221;-&gt;&#8221;Task form&#8221; element on it. Or check the &#8220;details&#8221; checkbox in the &#8220;View&#8221; tab.</li>
+<li>In the newly appeared window at the bottom of the MSP-window, perform editing and adding resources accordance to your requirements</li>
+<li>Press &#8220;OK&#8221; button to save the changes</li>
+</ul>
+</li>
+<li>Use the Assing resources option from the resource tab. Works similar to option 1.</li>
+</ol>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-595" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/addresource.jpg" alt="" width="945" height="556" /></p>
+<p style="text-align: center;"><b><i>Screen #15 – Assigning resources</i></b></p>
+<h2 style="text-align: left;" id="defining-work-hours" ><strong>Defining work hours</strong></h2>
+<p>After you have assigned resources to a task, you can specify the work related to the task. Epicflow works with next three fields in MSP:</p>
+<ul>
+<li><strong>Remaining work; </strong>The work still to be done</li>
+<li><strong>Actual Work; </strong>The spend or burned hour on the task</li>
+<li><strong>Work </strong>= Remaining work + Actual Work</li>
+</ul>
+<p>For newly created tasks one only specifies the &#8220;Work&#8221; related to a task; Actual work is zero and remaining work is equal to work. When a single resource is assigned to a task one can define the work in the task list.</p>
+<ul>
+<li>First add work to a task with a single resource, similar to line 14 and check the relation between Work and Duration. When adding 40 hrs of Work the duration will be default 5 days. Put 10 hrs in the &#8220;actual work&#8221; field and check the effect on the Remaining work(30) and Work(still 40).</li>
+</ul>
+<p>When multiple resources are assigned to one task the &#8220;Task form&#8221; must be used. see the example on line 11.</p>
+<ul>
+<li>To view the &#8220;Task form&#8221;; Select the &#8220;View&#8221; tab and press &#8220;Other View&#8221;-&gt;&#8221;Task form&#8221; element on it. Or check the &#8220;details&#8221; checkbox in the &#8220;View&#8221; tab.</li>
+</ul>
+<ul>
+<li>Also here update the Work, the Actual work and remaining work field for every resource and check the relation.</li>
+<li>When clicking on &#8220;OK&#8221; ( the &#8220;Previous&#8221; button will turn into the &#8220;OK&#8221; button when an item is changed), then also the duration will be updated based on the resource assignment that requires the most time.</li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-597" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/adding-work.jpg" alt="" width="1130" height="444" /></p>
+<p style="text-align: center;"><b><i>Screen #16 – Updating work hours </i></b></p>
+<p style="text-align: left;">When using the Epicflow MS-Project template, the default task type used is &#8220;Fixed Work&#8221;. With such configuration if anybody change the duration of the task or the Units% of an assignment it will not ruin the task work estimation. Try the &#8220;Fixed units&#8221; and &#8220;Fixed Duration&#8221; setting yourselves and experience the difference. Again, Epicflow is not taking nor the Duration nor the units into account. The reason for this is that the Epicflow algorithms to calculate the priorities and resource load are based on the remaining work of a resource assignment.</p>
+<h2 style="text-align: left;" id="creating-milestones" ><strong>Creating Milestones</strong></h2>
+<ul>
+<li>Make sure no resource is assigned to the task</li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Double click on the task line to show the task box and in newly appeared window select “Advanced” tab.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Change “duration” to “zero”</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Specify Deadline date</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">The checkbox “Mark task as a milestone” located in the bottom right side of the window is automatically set when you save changes in this window.  </span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Save applied changes by pressing “Ok” button</span></li>
+</ul>
+<p><img loading="lazy" decoding="async" class=" wp-image-494 aligncenter" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/TaskToMilestone.jpg" alt="" width="551" height="343" /></p>
+<p style="text-align: center;"><b><i>Screen #17 – Task To Milestone</i></b></p>
+<h2 id="creating-uclt-task" >Creating UCLT task</h2>
+<p>UCLT task is a task assigned on UCLT group (“Un-Compressible Lead Time”) which can be used as a resource in case of ordering time.</p>
+<p>Information on UCLT group creation is granted further in this tutorial. In this chapter we are going to describe some specificity of UCLT tasks usage.</p>
+<p>Keep in your mind that in case if UCLT task is not a first task in a chain of tasks it will be started by Epicflow next day the previous task is completed ignoring the day specified in milestone.</p>
+<p>In result you could have a next situation.</p>
+<p>Milestone is set on Friday (end of the week) but all tasks were completed on Monday (start of the week), so UCLT task will be started on Tuesday (start of the week) instead of Monday next week</p>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-632" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/UCLT-network-1.jpg" alt="" width="611" height="160" /></p>
+<p style="text-align: center;"><b><i>Screen #18 – Tasks chain with UCLT task</i></b></p>
+<p>If you are willing to start UCLT task in a particular day you need to create a milestone with the specified date and link it to the UCLT task.</p>
+<p>With such approach even if all Predecessors are completed UCLT task wont be started till the date specified in additional milestone.</p>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-633" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/UCLT-network-2.jpg" alt="" width="622" height="301" /></p>
+<p style="text-align: center;"><b><i>Screen #19 – Tasks chain with UCLT task and additional milestone</i></b></p>
+<p>&nbsp;</p>
+<h1 id="defining-the-resource-pool" >Defining the Resource pool</h1>
+<p><span style="font-weight: 400;">Epicflow uses the shared resource pool as the source of the MS-project resources. In this paragraph, we will learn you how to create a resourcepool and how to connect your project to it.</span></p>
+<p><span style="font-weight: 400;">To start, use the Resource Pool template found by next link <a href="https://wiki-stage.epicflow.com/downloads/">MS Project Templates</a>. </span><span style="font-weight: 400;">Save the file in the Epicflow file folder, according to the project naming convention. i.e. </span><strong><em>&#8220;Resource Pool.mpp&#8221;. </em></strong>See the explanation of the <a href="https://wiki-stage.epicflow.com/index.php/knowledge-base/ms-project-basics/#resource-sheet">Resource Sheet</a> and the related fields in this at the top of this article to see how the resourcepool is organized.</p>
+<p><span style="font-weight: 400;">For the purpose of Epicflow, the Resource Pool requires:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">adding </span> <span style="font-weight: 400;">the Group names to the Resource Pool;</span></li>
+<li>adding the Resource names to the Resource Pool and specify belonging of the particular Resource to a specific Group;</li>
+<li style="font-weight: 400;">Set a special key for identification difference between Resource and Group for the Epicflow; The R of G column.</li>
+<li style="font-weight: 400;">Optionally: Define resource availability</li>
+</ul>
+<h2 style="text-align: left;" id="add-resource" >Add Resource</h2>
+<p><span style="font-weight: 400;">Some blank resources records have been added into the template, so you will not need to insert a new one.</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">To add a new resource click on &#8220;Resource&#8221; tab and click on the line BELOW where new resource must be added. </span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">In selected “Resource” tab select item “Add Resources” and select &#8220;Work Resource&#8221; item from the appeared menu. Epicflow does not support the other resource types.</span></li>
+<li>You can also add a resource by clicking insert, or by right-clicking on the resource below and then select &#8220;insert resource&#8221;</li>
+<li>Fill in next fields:
+<ul>
+<li>&#8220;Name&#8221; &#8211; specify name of Resource or Resource Group</li>
+<li>&#8220;Group&#8221; &#8211; should contain name of the Resource Group to which Resource is assigned to. For Resource Group it should be equal to &#8220;Name&#8221; field.</li>
+<li> &#8220;R or G&#8221;- special keys column. For each Resource should contain &#8220;R&#8221; key and for the Resource Group it should be &#8220;G&#8221;.</li>
+<li>(Optional) &#8220;Max units&#8221;- by default 100% which is equal to one FTE.</li>
+<li>(Optional) &#8220;Email Address&#8221; &#8211; required for further invite procedure of the users into the system.</li>
+</ul>
+</li>
+</ul>
+<p>We strongly recommend to specify Email Address on resource creation, even if it&#8217;s not obligatory. Reason that if later you change name of the Resource, system will be able to link it with the user in Epicflow by Email Address and use such as identifier for the resoruce.</p>
+<ul>
+<li>Repeat all steps to add all required resources</li>
+<li>Save Resource Pool</li>
+</ul>
+    		<div class="hts-messages hts-messages--info  hts-messages--withtitle hts-messages--withicon "   >
+    			<span class="hts-messages__title">Note</span>    			    				<p>
+    					</p>
+<p>In case if any column is missed on your representation you can easily add such by right-click over the columns title and selecting &#8220;Insert column&#8221; item from the appeared context menu.</p>
+<p>    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1297" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/10/Adding-Resource.jpg" alt="" width="739" height="454" /></p>
+<p style="text-align: center;"><b><i>Screen #20 – Adding Resource</i></b></p>
+    		<div class="hts-messages hts-messages--info  hts-messages--withtitle hts-messages--withicon "   >
+    			<span class="hts-messages__title">Note</span>    			    				<p>
+    					</p>
+<p>As soon as resource is uploaded in to the Epicflow system any change of Resource parameters and values must be done in Epicflow directly.</p>
+<p>This restriction came from the fact that one Epicflow resource can be linked to many external systems where resource parameters may differ, so update synchronization from Epicflow to Resource Pool and via verse will be not correct for already uploaded resources.</p>
+<p>    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<h2 id="add-new-group" >Add New Group</h2>
+<p>Similar to adding a new resource. The differences are:</p>
+<ul>
+<li>The &#8220;G&#8221; in the R or G column</li>
+<li>Optionally: you can put as the max Units the sum of the units of the resource of the group. This is not required since this is also internally defined in Epciflow.</li>
+</ul>
+<h2 id="add-special-uclt-group" >Add special UCLT Group</h2>
+<p>You can specify a special group called “UCLT” (&#8220;Un-Compressible Lead Time&#8221;) which can be used as a resource in case of ordering time.</p>
+<p>If task is assigned on UCLT group, on daily basis, Epicflow automatically subtracts Capacity of the group from the tasks&#8217; Remaining Work.</p>
+<p>To add UCLT group you need to add a group with the name &#8220;UCLT&#8221; as it described in previous chapter.</p>
+<p>Be aware that UCLT group shouldn&#8217;t contain any resource assigned to it and it doesn&#8217;t work with the task&#8217;s duration. That&#8217;s why you need always specify Remaining Work equal to required duration.</p>
+<p>For additional information regard UCLT tasks please refer to a separate chapter &#8220;UCLT tasks creation&#8221;</p>
+<h2 id="add-resource-to-multiple-groups" >Add resource to Multiple Groups</h2>
+<p>MS Project doesn’t allow to have one resource in two groups simultaneously and if you would like to have, for example, resource “Res1” to be assigned to group “Gr1” and “Gr2” you need to perform next actions:</p>
+<ul>
+<li>Specify in MS Resource Pool resource “Res1” within group “Gr1”</li>
+</ul>
+<ul>
+<li>Specify in MS Resource Pool resource “Res1&lt;something&gt;” within group “Gr2”</li>
+</ul>
+<ul>
+<li>Set the same email address for both resources.</li>
+</ul>
+<ul>
+<li>Upload MS Resource Pool into epicflow system</li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1296" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/10/Resource-to-a-multiple-Groups.jpg" alt="" width="574" height="258" /></p>
+<p style="text-align: center;"><b><i>Screen #21 – Add resource to a multiple Group</i></b></p>
+<p>In result Epicflow system will accept such identification as one resource with the shortest name “Res1” which do belong to “Gr1” and “Gr2”.</p>
+<h2 id="connect-project" >Connect Project</h2>
+<p>Open your project file and open the resource pool. If it is not the first project connected to the resource pool you will get the following message:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-362 aligncenter" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/SC3.jpg" alt="" width="397" height="303" /></p>
+<p style="text-align: center;"><b><i>Screen #22 – Open Resource Pool</i></b></p>
+<ul>
+<li style="text-align: left;">Open the Resource pool in read-write mode.</li>
+<li><span style="font-weight: 400;">Open MS project file.</span></li>
+<li><span style="font-weight: 400;">Select in MS Project menu tab “Resource”-&gt; “Resource pool” -&gt; “Share resources” -&gt; and from the appeared drop-down list choose appropriate Resource Pool.mpp file.</span></li>
+</ul>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-364 aligncenter" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/SC5.jpg" alt="" width="490" height="380" /></p>
+<p style="text-align: center;"><b><i>Screen #23 – Linking Resource Pool to the Project</i></b></p>
+<p>As soon as you press &#8220;Ok&#8221; button and save Project and Resource Pool files they are defined as connected.</p>
+<p>Be aware that projects which are not linked to the Resource Pool wont be uploaded.</p>
+<h2 id="unlink-project" >Unlink Project</h2>
+<p>In case is project is over and you would like to exclude it from the system and storage itself, for example in case of backup archive preparation of the old not required files, you would need to remove a connection of the project on Resource Pool.</p>
+<p>For that you need to</p>
+<ul>
+<li style="text-align: left;">Open the Resource pool in read-write mode.</li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-362" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/SC3.jpg" alt="" width="397" height="303" /></p>
+<p style="text-align: center;"><b><i>Screen #24 – Open Resource Pool</i></b></p>
+<ul>
+<li><span style="font-weight: 400;">Open MS project file.</span></li>
+<li><span style="font-weight: 400;">Select in MS Project menu tab “Resource”-&gt; “Resource pool” -&gt; “Share resources” -&gt; and select option &#8220;Use own resources&#8221;.</span></li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-636" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/Unlink-Resource-Pool.jpg" alt="" width="575" height="436" /></p>
+<p style="text-align: center;"><b><i>Screen #25 – Unlink Resource Pool</i></b></p>
+<p>As soon as you press &#8220;Ok&#8221; button and save Project and Resource Pool files they are defined as unlinked.</p>
+<h2 id="delete-resource" >Delete Resource</h2>
+<p>To delete Resource from the Pool you would need to:</p>
+<ul>
+<li style="text-align: left;">Open the Resource pool in read-write mode.</li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-362" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/SC3.jpg" alt="" width="397" height="303" /></p>
+<p style="text-align: center;"><b><i>Screen #26 – Open Resource Pool</i></b></p>
+<ul>
+<li><span style="font-weight: 400;">Select in MS Project menu tab “View”-&gt; “Resource Sheet”</span></li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-824" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/Resource-Sheet.jpg" alt="" width="1078" height="462" /></p>
+<p style="text-align: center;"><b><i>Screen #27 – Resource Sheet</i></b></p>
+<ul>
+<li>Allocate the needed resource in your Resource Pool and select it by left mouse click</li>
+<li><span style="font-weight: 400;">Select in MS Project menu tab “Resources”-&gt;&#8221;Details&#8221;</span></li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-829" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/Resource-Details-2.jpg" alt="" width="804" height="616" /></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><b><i>Screen #28 – Resource Details</i></b></p>
+<p style="text-align: left;">In result, at the bottom of your screen, you&#8217;ll have a list of all task on which resource is assigned with the Project Name in which task is defined. Before Resource deletion itself you need to reassign all tasks from the particular resource to omit deletion of Actual, Remaining and Total work.</p>
+<p style="text-align: left;">To proceed with it at first you need to</p>
+<ul>
+<li>open all Projects from the &#8220;Project&#8221; column displayed in &#8220;Resource Form&#8221; as we have on Screen above</li>
+<li>Go back to Resource Pool and select required task in the appeared frame by left-click.Press &#8220;Information&#8221; button from the &#8220;Resource&#8221; menu tab</li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-833" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/Task-Information-2.jpg" alt="" width="804" height="614" /></p>
+<p style="text-align: center;"><b><i>Screen #29 – Task Information</i></b></p>
+<ul>
+<li>In appeared window &#8220;Task Information&#8221; navigate to the &#8220;Resoruces&#8221; tab and perform selection of another resource for the particular task to reassign it.</li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-645" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/Resource-Reassignment.jpg" alt="" width="630" height="397" /></p>
+<p style="text-align: center;"><i><b>Screen #30 – Resource Reassignment</b></i></p>
+    		<div class="hts-messages hts-messages--info  hts-messages--withtitle hts-messages--withicon "   >
+    			<span class="hts-messages__title">NOTE</span>    			    				<p>
+    					Be cautious on new resource selection, cause as soon as you confirm reassignment, task will disappear from the Task List displayed for the resource and any other editing actions with that task will require additional effort.    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<ul>
+<li>Proceed as described in a previous two steps for all tasks on which resource is assigned</li>
+<li>Only when resource has no assignment you can deleted it by right mouse button click and selection of &#8220;Delete Resource&#8221; item</li>
+<li>Save and Close all files</li>
+</ul>
+    		<div class="hts-messages hts-messages--info  hts-messages--withtitle hts-messages--withicon "   >
+    			<span class="hts-messages__title">NOTE</span>    			    				<p>
+    					Deletion of the resource in Resource Pool won&#8217;t delete resource in Epicflow but will unmapp link of such with the external system. More detailed information about it and how to delete resource in Epicflow is granted in separate chapter.    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<h2 id="delete-group" >Delete Group</h2>
+<p>To delete group from the resource pool</p>
+<ul>
+<li>Delete all Resources of the Group, as it described in &#8220;Delete Resource&#8221; chapter.</li>
+<li>As next step you would need to reassign all assigned task from the current Group itself. To proceed with it follow all steps covered in &#8220;Delete Resource&#8221; chapter with only difference that instead Resource all actions must be performed on the Group.</li>
+</ul>
+<ul>
+<li>Only when Group has no assignment and resources in it, you can perform deletion of such by right mouse button click and selection of &#8220;Delete Resource&#8221; item</li>
+<li>Save and Close all files</li>
+</ul>
+    		<div class="hts-messages hts-messages--info  hts-messages--withtitle hts-messages--withicon "   >
+    			<span class="hts-messages__title">NOTE</span>    			    				<p>
+    					Deletion of the Group in Resource Pool won&#8217;t delete Group in Epicflow but will unmapp link of such with the external system. More detailed information about it and how to delete Group in Epicflow is granted in separate chapter.    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<h1 id="troubleshooting" >Troubleshooting</h1>
+<h2 id="cant-open-resource-pool-in-read-write-mode" >Can&#8217;t open resource pool in read-write mode</h2>
+<p style="text-align: left;"><span style="font-weight: 400;">Since this resource pool is shared among all projects it can be that this is not allowed to open the pool in read-write mode.</span></p>
+<p><span style="font-weight: 400;"><strong>When editing a project:</strong><br />
+No problem, read-only will do and is even preferred in order not to block the resource pool from editing.</span></p>
+<p><strong>When connecting project to resource pool:<br />
+</strong><span style="font-weight: 400;">Read-write is preferred, but</span><span style="font-weight: 400;"> read-only will also do. You will still be able to create a relation from your project file to the resource pool, only this link is not stored in the resource pool itself. This will be corrected automatically the next time you have a chance to open your project and the resource pool in read-write mode.</span></p>
+<h2 id="unintentionally-added-resources-to-pool" >Unintentionally added resources to pool</h2>
+<p>This happens when you type a name in the resource name field in your project file which is not part of the shared resource pool. If you did this only in your local project file you can just delete them. If those resources are saved in the shared resource pool you have to remove them also from the shared resource pool.</p>
+<p>You can recognize unintended added resource in the shared resource pool since the &#8220;group&#8221; filed and custom fields &#8220;R of G&#8221; are not filled in.</p>
+<h2 id="cant-delete-a-resource-from-pool" >Can&#8217;t delete a resource from pool</h2>
+<p>This happens when there is work related to a resource. Now you have to open the resource pool and the project(s) where the work is allocated simultaneously in read-write mode.</p>
+<p>You can do this:</p>
+<ul>
+<li>By opening the resource pool, and selecting the 3rd option. &#8220;read-write mode and all other shared files&#8221; This will create a master project file that includes all related projects. In the Gantt Chart, you can now filter on the resource you want to delete and remove the assignments. After that, you can delete the resource.</li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-649" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/09/Open-R_W-Resource-Pools-and-All-projects.jpg" alt="" width="407" height="311" /></p>
+<p style="text-align: center;"><b><i>Screen #31 – Open Resource Pool and All Projects</i></b></p>
+<h2 id="projects-not-found-when-opening-master-file" >Projects not found when <span style="background-color: #f6d5d9;">opening</span> master file</h2>
+<p>This happens when file was moved, deleted or renamed.</p>
+<p>In this case you wont be able to break the link in Resoruce Pool on obsolete file.</p>
+<p>Workaround is to</p>
+<ul>
+<li>create a project file with exact same name</li>
+<li>place it in the same location</li>
+<li>link it to the Resource Pool</li>
+<li>save all files</li>
+<li>unlink specially created project</li>
+<li>save all files and delete project created at first step</li>
+</ul>
+<h2 id="project-synchronization-issue" >Project Synchronization issue</h2>
+<p>Usually, for previously uploaded project, it happens either when</p>
+<ul>
+<li>specified more than one Start milestone or External\Internal Due Date Milestones</li>
+<li>&#8220;Deadline&#8221; cell&#8217;s value for the Start milestone or External\Internal Due Date Milestones was removed</li>
+<li>task is assigned on new resource which wasn&#8217;t uploaded into Epicflow yet</li>
+</ul>
+<p>To work out such cases</p>
+<ul>
+<li>verify structure of the Project and Resource Pool files in accordance to template</li>
+<li>before Project synchronization open Resoruce Pool file in Read-Write mode and synchronize it first. On successful Resource Pool synchronization go back to the Project itself and sync it as well.</li>
+</ul>
+
+				
+			</div>
+
+							<div class="hkb-article__lastupdated" itemprop="dateModified">
+					Updated on June 9, 2023				</div>
+			
+			
+
+
+			
+<div class="hkb-article-tags">
+	</div>
+
+			
+<div class="hkb-feedback">
+	<span class="hkb-feedback__title">Was this article helpful?</span>
+					<div class="ht-voting" id ="ht-voting-post-530">
+								
+			
+<div class="ht-voting-links ht-voting-none">
+	<a class="ht-voting-upvote enabled" rel="nofollow" role="button" data-direction="up" data-type="post" data-nonce="7c28d80bdd" data-id="530" data-allow="1" data-display="standard" href="#">
+		<i class="hkb-upvote-icon"></i>
+		<span>Yes</span>
+	</a>
+	<a class="ht-voting-downvote enabled" rel="nofollow" role="button" data-direction="down" data-type="post" data-nonce="7c28d80bdd" data-id="530" data-allow="1" data-display="standard" href="#">
+		<i class="hkb-upvote-icon"></i>
+		<span>No</span>
+	</a>
+</div>
+	<!-- no new vote -->
+
+							</div>
+			</div>
+			
+							
+
+<!-- .hkb-article__related -->     
+	<section class="hkb-article-related">
+		<h3 class="hkb-article-related__title">Related Articles</h3>
+		<ul class="hkb-article-list">
+		
+			<li class="hkb-article-list__format-standard">
+				<a href="https://wiki-stage.epicflow.com/knowledge-base/exercise-files/">Exercise files</a>
+			</li>
+
+		
+			<li class="hkb-article-list__format-standard">
+				<a href="https://wiki-stage.epicflow.com/knowledge-base/minimum-planning-prerequisites/">Planning prerequisites</a>
+			</li>
+
+				</ul>
+	</section>
+<!-- /.hkb-article__related -->
+
+			
+			
+		</article>
+
+		
+		</div>
+
+	
+	
+</div>
+</div>
+
+<!-- .site-footer -->
+<footer class="site-footer" itemscope itemtype="https://schema.org/WPFooter">
+<div class="ht-container">
+
+					<nav class="nav-footer">
+			<div class="menu-navigation-menu-container"><ul id="menu-navigation-menu-1" class=""><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-313"><a href="/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-302"><a href="https://wiki-stage.epicflow.com/release-notes/">Release Notes</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="https://wiki-stage.epicflow.com/faq/">FAQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-342"><a href="https://wiki-stage.epicflow.com/documentation/">Docs and Media</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1466"><a href="https://wiki-stage.epicflow.com/downloads/">Downloads</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-318"><a href="https://wiki-stage.epicflow.com/contact-us/">Contact Us</a></li>
+</ul></div>		</nav>
+	
+</div>
+</footer> 
+<!-- /.site-footer -->
+
+
+<style type="text/css">
+<!--
+
+
+
+#goog-gt-tt,
+.goog-tooltip,
+.goog-tooltip:hover {
+	display: none !important;
+}
+.goog-text-highlight {
+	background-color: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+.translated-rtl font,
+.translated-ltr font {
+	background-color: transparent !important;
+	box-shadow: none !important;
+	box-sizing: border-box !important;
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+}
+
+-->
+</style>
+
+
+
+
+<script type="text/javascript">
+/*<![CDATA[*/
+function initializeGoogleTranslateElement() {
+	new google.translate.TranslateElement({
+		autoDisplay: false,
+		pageLanguage: "en",
+		floatPosition: google.translate.TranslateElement.FloatPosition.TOP_RIGHT
+	});
+}
+/*]]>*/
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=initializeGoogleTranslateElement"></script><script type="text/javascript" id="ht-kb-frontend-scripts-js-extra">
+/* <![CDATA[ */
+var voting = {"ajaxurl":"https:\/\/wiki-stage.epicflow.com\/wp-admin\/admin-ajax.php","ajaxnonce":"492877fa01"};
+var hkbJSSettings = {"liveSearchUrl":"https:\/\/wiki-stage.epicflow.com?ajax=1&ht-kb-search=1&s=","focusSearchBox":"","keepTypingPrompt":"<ul id=\"hkb\" class=\"hkb-searchresults\" role=\"listbox\"><li class=\"hkb-searchresults__noresults\" role=\"option\"><span>Keep typing for live search results<\/span> <\/li><\/ul>","triggerLength":"3"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/ht-knowledge-base/dist/ht-kb-frontend.min.js?ver=3.15.0" id="ht-kb-frontend-scripts-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/ht-shortcodes/modules/messages/ht-shortcodes-messages-frontend.js?ver=1.0" id="ht-shortcodes-messages-frontend-script-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/heroic-glossary/dist/ht-glossary-frontend.js?ver=350" id="htgb-custom-js-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/heroic-blocks/dist/js/ht-blocks-frontend.js?ver=1721715670" id="ht-blocks-frontend-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/heroic-table-of-contents/dist/script.min.js?ver=1721715670" id="ht_toc-script-js-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/themes/knowall/js/js.min.js?ver=6.6.1" id="ht_theme_js-js"></script>
+<script type="text/javascript" id="scrollspy-js-extra">
+/* <![CDATA[ */
+var scrollspyCustomValues = {"offset":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/themes/knowall/js/scrollspy.js?ver=6.6.1" id="scrollspy-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/comment-reply.min.js?ver=6.6.1" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="hkb-toc-scrollspy-js-extra">
+/* <![CDATA[ */
+var hkbTOCSettings = {"htTOCWidgetScollspyViewOffset":"0"};
+var hkbTOCSettings = {"htTOCWidgetScollspyViewOffset":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/ht-knowledge-base/js/hkb-toc-scrollspy.min.js?ver=3.15.0" id="hkb-toc-scrollspy-js"></script>
+
+</div>
+<!-- /.ht-site-container -->
+</body>
+</html>

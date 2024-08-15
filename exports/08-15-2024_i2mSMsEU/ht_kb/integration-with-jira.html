@@ -1,0 +1,1139 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<title>Integration with Jira &#8211; Wiki.Epicflow</title>
+<style type="text/css">.wpfts-result-item .wpfts-smart-excerpt {}.wpfts-result-item .wpfts-smart-excerpt b {font-weight:bold !important;}.wpfts-result-item .wpfts-not-found {color:#808080;font-size:0.9em;}.wpfts-result-item .wpfts-score {color:#006621;font-size:0.9em;}.wpfts-shift {margin-left:40px;}.wpfts-result-item .wpfts-download-link {color:#006621;font-size:0.9em;}.wpfts-result-item .wpfts-file-size {color:#006621;font-size:0.9em;}.wpfts-result-item .wpfts-sentence-link {text-decoration:none;cursor:pointer;color:unset;}.wpfts-result-item .wpfts-sentence-link:hover {text-decoration:underline;color:inherit;}.wpfts-result-item .wpfts-word-link {text-decoration:none;cursor:pointer;}.wpfts-result-item .wpfts-word-link:hover {text-decoration:underline;}wpfts-highlight.wpfts-highlight-sentence {background-color:rgba(255, 255, 128, 0.5) !important;display:inline-block;}wpfts-highlight.wpfts-highlight-word {background-color:rgba(255, 128, 128, 0.5) !important;display:inline-block;}</style><meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" type="application/rss+xml" title="Wiki.Epicflow &raquo; Feed" href="https://wiki-stage.epicflow.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Wiki.Epicflow &raquo; Comments Feed" href="https://wiki-stage.epicflow.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Wiki.Epicflow &raquo; Integration with Jira Comments Feed" href="https://wiki-stage.epicflow.com/knowledge-base/integration-with-jira/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/wiki-stage.epicflow.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/block-library/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio :where(figcaption){color:#ffffffa6}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed :where(figcaption){color:#ffffffa6}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:#ffffffa6}:root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:#ffffffa6}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table :where(figcaption){color:#ffffffa6}.wp-block-video :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video :where(figcaption){color:#ffffffa6}.wp-block-video{margin:0 0 1em}:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<link rel='stylesheet' id='wp-components-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/components/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-preferences-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/preferences/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-editor-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/block-editor/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-reusable-blocks-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/reusable-blocks/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-patterns-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/patterns/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-editor-css' href='https://wiki-stage.epicflow.com/wp-includes/css/dist/editor/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='htgb-style-css-css' href='https://wiki-stage.epicflow.com/wp-content/plugins/heroic-glossary/dist/blocks.style.build.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ht-blocks-modules-styles-css' href='https://wiki-stage.epicflow.com/wp-content/plugins/heroic-blocks/dist/css/ht-blocks-modules-styles.css?ver=1721715670' type='text/css' media='all' />
+<link rel='stylesheet' id='ht_toc-style-css-css' href='https://wiki-stage.epicflow.com/wp-content/plugins/heroic-table-of-contents/dist/blocks.style.build.css?ver=1721715670' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-gray: #28303D;--wp--preset--color--gray: #39414D;--wp--preset--color--theme-default: #00b4b3;--wp--preset--color--blue: #0069e4;--wp--preset--color--purple: #5749a0;--wp--preset--color--orange: #f0644a;--wp--preset--color--green: #46a162;--wp--preset--color--pale-blue: #7994be;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='wpfts_jquery-ui-styles-css' href='https://wiki-stage.epicflow.com/wp-content/plugins/fulltext-search/style/wpfts_autocomplete.css?ver=1723727438' type='text/css' media='all' />
+<link rel='stylesheet' id='heroic-faq-group-gb-block-frontend-style-css' href='https://wiki-stage.epicflow.com/wp-content/plugins/ht-faq/blocks/v1/heroic-faq-group-gb/style.css?ver=1.3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='UserAccessManagerLoginForm-css' href='https://wiki-stage.epicflow.com/wp-content/plugins/user-access-manager/assets/css/uamLoginForm.css?ver=2.2.23' type='text/css' media='screen' />
+<link rel='stylesheet' id='ht-theme-style-css' href='https://wiki-stage.epicflow.com/wp-content/themes/knowall/css/style.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='ht-childtheme-style-css' href='https://wiki-stage.epicflow.com/wp-content/themes/knowall-child/style.css?ver=6.6.1' type='text/css' media='all' />
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/jquery/ui/menu.min.js?ver=1.13.3" id="jquery-ui-menu-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/dist/a11y.min.js?ver=d90eebea464f6c09bfd5" id="wp-a11y-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.13.3" id="jquery-ui-autocomplete-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/fulltext-search/js/wpfts_frontend.js?ver=1723727438" id="wpfts_frontend-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/wp-image-zoooom/assets/js/jquery.image_zoom.min.js?ver=1.57" id="image_zoooom-js"></script>
+<script type="text/javascript" id="image_zoooom-init-js-extra">
+/* <![CDATA[ */
+var IZ = {"with_woocommerce":"0","exchange_thumbnails":"1","woo_categories":"0","enable_mobile":"","options":[],"woo_slider":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/wp-image-zoooom/assets/js/image_zoom-init.js?ver=1.57" id="image_zoooom-init-js"></script>
+<link rel="https://api.w.org/" href="https://wiki-stage.epicflow.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://wiki-stage.epicflow.com/wp-json/wp/v2/ht-kb/188" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://wiki-stage.epicflow.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.6.1" />
+<link rel="canonical" href="https://wiki-stage.epicflow.com/knowledge-base/integration-with-jira/" />
+<link rel='shortlink' href='https://wiki-stage.epicflow.com/?p=188' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://wiki-stage.epicflow.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwiki-stage.epicflow.com%2Fknowledge-base%2Fintegration-with-jira%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://wiki-stage.epicflow.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwiki-stage.epicflow.com%2Fknowledge-base%2Fintegration-with-jira%2F&#038;format=xml" />
+<script type="text/javascript">
+		document.wpfts_ajaxurl = "https://wiki-stage.epicflow.com/wp-admin/admin-ajax.php";
+	</script><meta name="generator" content="Heroic FAQs v1.3.0" />
+<!-- HKB CSS Variables --><style>:root {--hkb-main-container-width: 1200px;--hkb-link-color: #2358a1;--hkb-link-color-hover: #2861b0;--hkb-header-style-bg: #2358a1;--hkb-header-style-graddir: 90deg;--hkb-header-style-grad1: #2358a1;--hkb-header-style-grad2: #2358a1;--hkb-header-text-color: #ffffff;}</style><meta name="generator" content="Heroic Knowledge Base v3.15.0" />
+<meta name="generator" content="KnowAll Child Theme v1.15.14" />
+<style type="text/css">img.zoooom,.zoooom img{padding:0!important;}</style><script type="text/javascript"></script><link rel="icon" href="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/favicon.png" sizes="32x32" />
+<link rel="icon" href="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/favicon.png" />
+<meta name="msapplication-TileImage" content="https://wiki-stage.epicflow.com/wp-content/uploads/2019/06/favicon.png" />
+<style id="kirki-inline-styles">.site-header{background:#00b4b3;}.site-header .site-header__title, .nav-header ul li a{color:#fff;}.nav-header .nav-header__mtoggle span, .nav-header .nav-header__mtoggle span::before, .nav-header .nav-header__mtoggle span::after{background:#fff;}a{color:#00b4b3;}input[type="reset"], input[type="submit"], input[type="button"], .hkb-article__content ol li:before, .hkb-article__content ul li:before, .hkb_widget_exit__btn{background:#00b4b3;}.hkb-breadcrumbs__icon{fill:#00b4b3;}.hkb-article__title a:hover, .hkb-article__link:hover h2, .ht-post__title a:hover, .hkb-category .hkb-category__articlelist a{color:#00b4b3;}.hkb-article-attachment__icon{fill:#00b4b3;}a:hover, .hkb-category .hkb-category__articlelist a:hover{color:#00a8a8;}button:hover, input[type="reset"]:hover, input[type="submit"]:hover, input[type="button"]:hover, .ht-transferbox__btn:hover{background:#00a8a8;}.ht-container{max-width:1000px;}.ht-sitecontainer--boxed{max-width:1000px;}h1, h2, h3, h4, h5, h6{font-family:Roboto;font-weight:700;text-transform:none;color:#333333;}body, input, optgroup, select, textarea, p{font-family:Roboto;font-size:17px;font-weight:400;line-height:1.55;color:#595959;}.hkb-category .hkb-category__iconwrap, .ht-categoryheader .hkb-category__iconwrap{flex-basis:35px;min-width:35px;}.hkb-category .hkb-category__iconwrap img, .ht-categoryheader .hkb-category__iconwrap img{max-width:35px;}.hkb-category .hkb-category__iconwrap img, .ht-categoryheader .hkb-category__iconwrap img, .hkb-category .hkb-category__iconwrap, .ht-categoryheader .hkb-category__iconwrap, .ht-categoryheader .hkb-category__iconwrap svg{max-height:35px;}.nav-header > ul > li.menu-item-has-children > a::after {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34.1 19' fill='%23ffffff'%3E%3Cpath d='M17 19c-0.5 0-1-0.2-1.4-0.6L0.6 3.4c-0.8-0.8-0.8-2 0-2.8 0.8-0.8 2-0.8 2.8 0L17 14.2 30.7 0.6c0.8-0.8 2-0.8 2.8 0 0.8 0.8 0.8 2 0 2.8L18.4 18.4C18 18.8 17.5 19 17 19z'/%3E%3C/svg%3E");}.ht-container, .ht-sitecontainer--boxed { max-width: 1000px }.hkb-category .hkb-category__link { border-bottom: 1px solid #e6e6e6; } .hkb-category.hkb-category--witharticles { border-bottom: 1px solid #e6e6e6; }.hkb_widget_toc ol li.active > a { background: rgba( 0 ,180, 179, 0.8); }/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://wiki-stage.epicflow.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</style>	</head>
+<body class="ht_kb-template-default single single-ht_kb postid-188 single-format-standard wp-embed-responsive ht-kb" itemscope itemtype="https://schema.org/WebPage" data-spy="scroll" data-offset="30" data-target="#navtoc">
+<div class="ht-sitecontainer ht-sitecontainer--wide">
+
+<!-- .site-header -->
+<div class="site-header">
+
+	<header class="site-header__banner" itemscope itemtype="http://schema.org/WPHeader">
+	<div class="ht-container">
+
+		<!-- .site-logo -->
+		<div class="site-logo">
+			<a href="https://wiki-stage.epicflow.com" data-ht-sitetitle="Wiki.Epicflow">
+													
+		<img alt="Wiki.Epicflow" src="https://wiki-stage.epicflow.com/wp-content/themes/knowall/img/logo.png" />
+
+														<meta itemprop="headline" content="Wiki.Epicflow">
+							</a>
+		</div>
+		<!-- /.site-logo -->
+
+					<!-- .nav-header -->
+			<nav class="nav-header" itemscope itemtype="https://schema.org/SiteNavigationElement">
+				<button id="ht-navtoggle" class="nav-header__mtoggle"><span>Menu</span></button>
+				<ul id="menu-navigation-menu" class="nav-header__menuwrapper"><li id="menu-item-313" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-313"><a href="/">Home</a></li>
+<li id="menu-item-302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-302"><a href="https://wiki-stage.epicflow.com/release-notes/">Release Notes</a></li>
+<li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="https://wiki-stage.epicflow.com/faq/">FAQ</a></li>
+<li id="menu-item-342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-342"><a href="https://wiki-stage.epicflow.com/documentation/">Docs and Media</a>
+<ul class="sub-menu">
+	<li id="menu-item-3020" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3020"><a href="https://wiki-stage.epicflow.com/glossary/">Glossary</a></li>
+	<li id="menu-item-341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-341"><a href="https://wiki-stage.epicflow.com/software-and-hardware-requirements/">Software and Hardware Requirements</a></li>
+	<li id="menu-item-319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-319"><a href="https://wiki-stage.epicflow.com/api-integration/">API &#038; INTEGRATION</a></li>
+	<li id="menu-item-354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-354"><a rel="privacy-policy" href="https://wiki-stage.epicflow.com/privacy-policy/">Privacy Policy</a></li>
+	<li id="menu-item-1869" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1869"><a href="https://wiki-stage.epicflow.com/video-library/">Video library</a></li>
+	<li id="menu-item-3332" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3332"><a href="https://wiki-stage.epicflow.com/training-materials/">Training Materials</a></li>
+</ul>
+</li>
+<li id="menu-item-1466" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1466"><a href="https://wiki-stage.epicflow.com/downloads/">Downloads</a></li>
+<li id="menu-item-318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-318"><a href="https://wiki-stage.epicflow.com/contact-us/">Contact Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-326"><a href="https://wiki-stage.epicflow.com/about-epicflow/">About Epicflow</a></li>
+	<li id="menu-item-314" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-314"><a href="https://wiki-stage.epicflow.com/submit-a-ticket/">Submit A Ticket</a></li>
+</ul>
+</li>
+</ul>			</nav>
+			<!-- /.nav-header -->
+		
+	</div>
+	</header>
+	<!-- /.site-header -->
+
+	
+	
+
+</div>
+<!-- /.site-header -->
+
+
+<div class="ht-pageheader">
+<div class="ht-container">
+
+	
+<!-- .hkb-breadcrumbs -->
+<div class="hkb-breadcrumbs_wrap">
+			<ol class="hkb-breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList" >
+										<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<a itemprop="item" href="https://wiki-stage.epicflow.com">
+							<span itemprop="name">Home</span>
+							<svg class="hkb-breadcrumbs__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 34.1"><g><path d="M19,17c0,0.5-0.2,1-0.6,1.4L3.4,33.5c-0.8,0.8-2,0.8-2.8,0c-0.8-0.8-0.8-2,0-2.8L14.2,17L0.6,3.4c-0.8-0.8-0.8-2,0-2.8  c0.8-0.8,2-0.8,2.8,0l15.1,15.1C18.8,16,19,16.5,19,17z"/></g></svg>
+						</a>
+										<meta itemprop="position" content="1" />
+				</li>               
+							<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<a itemprop="item" href="https://wiki-stage.epicflow.com/article-categories/integration-with-external-systems/">
+							<span itemprop="name">Integration with external systems</span>
+							<svg class="hkb-breadcrumbs__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 34.1"><g><path d="M19,17c0,0.5-0.2,1-0.6,1.4L3.4,33.5c-0.8,0.8-2,0.8-2.8,0c-0.8-0.8-0.8-2,0-2.8L14.2,17L0.6,3.4c-0.8-0.8-0.8-2,0-2.8  c0.8-0.8,2-0.8,2.8,0l15.1,15.1C18.8,16,19,16.5,19,17z"/></g></svg>
+						</a>
+										<meta itemprop="position" content="2" />
+				</li>               
+							<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span>
+							<span itemprop="name">Integration with Jira</span>
+							<link itemprop="item" href="https://wiki-stage.epicflow.com/knowledge-base/integration-with-jira/" />
+						</span> 
+										<meta itemprop="position" content="3" />
+				</li>               
+					</ol>       
+	</div>  
+<!-- /.hkb-breadcrumbs -->
+	
+<form class="hkb-site-search" method="get" action="https://wiki-stage.epicflow.com/">
+		<label class="hkb-screen-reader-text" for="hkb-search">Search For</label>
+		<input id="hkb-search" class="hkb-site-search__field" type="text" value="" placeholder="Search the knowledge base..." name="s" autocomplete="off">
+		<img class="hkb-site-search__loader" src="https://wiki-stage.epicflow.com/wp-content/themes/knowall/img/loading.svg" alt="Searching..." />
+		<input type="hidden" name="ht-kb-search" value="1" />
+    	<input type="hidden" name="lang" value=""/>
+		<button class="hkb-site-search__button" type="submit"><span>Search</span></button>
+</form>
+
+</div>
+</div>
+
+<!-- .ht-page -->
+<div class="ht-page ht-page--sidebarleft">
+<div class="ht-container">
+
+			<!-- .sidebar -->
+	<aside class="sidebar sidebar--sticky" itemscope itemtype="https://schema.org/WPSideBar">
+		<section id="ht-kb-toc-widget-3" class="widget hkb_widget_toc"><h3 class="widget__title">Contents</h3>            <nav id="navtoc" role="navigation">
+
+                
+
+            <ol class="nav"><!-- adding li --><li class="active"><a href="#jira-account-creation">JIRA Account Creation</a><!-- adding level --><ol><li><a href="#admin-rights">Admin Rights</a><!-- adding li --></li><li class=""><a href="#read-write-rights">Read-Write Rights</a><!-- adding li --></li><li class=""><a href="#read-rights-only">Read Rights Only</a><!-- removing level --></li></ol></li><li><a href="#api-tokens">API Tokens</a><!-- adding level --><ol><li><a href="#create-an-api-token">Create an API Token</a><!-- removing level --></li></ol></li><li><a href="#jira-scope-filter">JIRA Scope Filter</a><!-- adding li --></li><li class=""><a href="#first-data-import">First Data Import</a><!-- adding level --><ol><li><a href="#connection">Connection</a><!-- adding li --></li><li class=""><a href="#scope-and-projects"> Scope and Projects</a><!-- adding li --></li><li class=""><a href="#groups-and-users">Groups and Users</a><!-- adding li --></li><li class=""><a href="#completing-import">Completing Import</a><!-- removing level --></li></ol></li><li><a href="#second-import-configuration">Second Import Configuration</a><!-- adding li --></li><li class=""><a href="#editing-connection">Editing Connection</a><!-- adding li --></li><li class=""><a href="#deleting-connection">Deleting Connection</a><!-- adding li --></li><li class=""><a href="#data-optimization">Data Optimization</a><!-- adding li --></li><li class=""><a href="#epicflow-and-jira-hours-correlation">Epicflow and JIRA Hours Correlation</a></li></ol><!-- /ht-kb-toc-widget -->
+            </nav>
+
+            </section>	</aside>
+	<!-- /.sidebar -->
+
+	
+		<div class="ht-page__content">
+		<article class="hkb-article post-188 ht_kb type-ht_kb status-publish format-standard hentry ht_kb_category-integration-with-external-systems" itemscope itemtype="https://schema.org/CreativeWork">
+		<meta itemprop="datePublished" content="September 4, 2018">
+
+			<header class="hkb-article__header">
+				<h1 class="hkb-article__title" itemprop="headline">Integration with Jira</h1>
+			</header>
+
+			<div class="ht-mobile-toc"><strong class="ht-mobile-toc__title">Contents</strong>            <nav id="navtoc" role="navigation">
+
+                
+
+            <ol class="nav"><!-- adding li --><li class="active"><a href="#jira-account-creation">JIRA Account Creation</a><!-- adding level --><ol><li><a href="#admin-rights">Admin Rights</a><!-- adding li --></li><li class=""><a href="#read-write-rights">Read-Write Rights</a><!-- adding li --></li><li class=""><a href="#read-rights-only">Read Rights Only</a><!-- removing level --></li></ol></li><li><a href="#api-tokens">API Tokens</a><!-- adding level --><ol><li><a href="#create-an-api-token">Create an API Token</a><!-- removing level --></li></ol></li><li><a href="#jira-scope-filter">JIRA Scope Filter</a><!-- adding li --></li><li class=""><a href="#first-data-import">First Data Import</a><!-- adding level --><ol><li><a href="#connection">Connection</a><!-- adding li --></li><li class=""><a href="#scope-and-projects"> Scope and Projects</a><!-- adding li --></li><li class=""><a href="#groups-and-users">Groups and Users</a><!-- adding li --></li><li class=""><a href="#completing-import">Completing Import</a><!-- removing level --></li></ol></li><li><a href="#second-import-configuration">Second Import Configuration</a><!-- adding li --></li><li class=""><a href="#editing-connection">Editing Connection</a><!-- adding li --></li><li class=""><a href="#deleting-connection">Deleting Connection</a><!-- adding li --></li><li class=""><a href="#data-optimization">Data Optimization</a><!-- adding li --></li><li class=""><a href="#epicflow-and-jira-hours-correlation">Epicflow and JIRA Hours Correlation</a></li></ol><!-- /ht-kb-toc-widget -->
+            </nav>
+
+            </div>
+			<div class="hkb-article__content" itemprop="text">
+
+				<p><span style="font-weight: 400;">This part of Wiki describes processes and functionalities of the Epicflow system integration with JIRA.</span></p>
+<p><span style="font-weight: 400;">All topics are set in the step-by-step order to make the process of integration intuitive and easy.</span></p>
+<h1 id="jira-account-creation" ><b>JIRA Account Creation</b></h1>
+<p><span style="font-weight: 400;">The first step is creating a JIRA account. A user should possess read-and-write rights to the defined projects for their import into the Epicflow system and additionally rights to operate with API.</span></p>
+<p><span style="font-weight: 400;">A permission can be granted to a group, project role, or issue role a user belongs to or granted directly to a user. For additional information about different approaches please refer to official JIRA documentation.</span></p>
+<p><span style="font-weight: 400;">The most common permissions are as follows:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Administer the Cloud site: Users in the site-admin group have this permission.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Administer Jira: granted by Jira Administrators global permission. Users in the administrator group have it.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Administer a project in Jira: Granted by the &#8220;Administer projects&#8221; permission for a project. It can be granted to a user, a group, a project role, and more.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Access a project in Jira: Granted by the &#8220;Browse projects&#8221; permission for a project. It can be granted to a user, a group, a project role, and more.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Access Jira: Granted by the Jira Users global permission. Users in the [product]-users (for example, Jira-software-users) group have this permission.</span></li>
+</ul>
+<p><span style="font-weight: 400;">For additional information please refer to official documents </span><a href="https://confluence.atlassian.com/adminjiraserver/managing-groups-938847035.html" target="_blank" rel="noopener"><span style="font-weight: 400;">Manage groups</span></a><span style="font-weight: 400;"> and </span><a href="https://confluence.atlassian.com/adminjiraserver073/managing-global-permissions-861253290.html" target="_blank" rel="noopener"><span style="font-weight: 400;">Managing global permissions</span></a><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">You can create an account having one of the following set of rights:</span></p>
+<h2 id="admin-rights" ><b>Admin Rights</b></h2>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Log in with the administrator account to the JIRA environment.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Go to site administration and invite a user by selecting the corresponding button at the top right corner located at the User page of the USER MANAGEMENT block.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">If it’s applicable for you, select the products from the Application access list that the user should have access to. In this case, at least choose Jira Core.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Specify the following set of groups:</span>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">administrators</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">site-admins</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Jira-developers</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Jira-users</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">users</span></li>
+</ul>
+</li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Indicate a separate email for the user.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Click &#8216;Invite user&#8217; and proceed with invitation email to accomplish user creation.</span></li>
+</ul>
+    		<div class="hts-messages hts-messages--info  hts-messages--withtitle hts-messages--withicon "   >
+    			<span class="hts-messages__title">Note</span>    			    				<p>
+    					<span style="font-weight: 400;">Please note that </span>to create or change Web-hooks, administrator and site-admin groups are required. The Epicflow system uses them to monitor and process changes from JIRA in the real-time mode. If these groups are not defined, the user auto-update from JIRA to Epicflow will be done once every hour and you’ll have to manage the scope of visible projects for the user by creating a separate group or using the previously created one.</p>
+<p>    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<h2 id="read-write-rights" ><b>Read-Write Rights</b></h2>
+<p><span style="font-weight: 400;">The difference from the previously described option covers only the scope of the set groups:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Jira-developers</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Jira-users</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">users</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">&lt;other groups&gt; specially created to define read-write access to the projects prepared for the import into the Epicflow system.</span></li>
+</ul>
+    		<div class="hts-messages hts-messages--info  hts-messages--withtitle hts-messages--withicon "   >
+    			<span class="hts-messages__title">Note</span>    			    				<p>
+    					</p>
+<p><span style="font-weight: 400;">The use of this approach, as well as account rights limitation at the JIRA level, are NOT RECOMMENDED since</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">expectation and observation results can be confusing for an inexperienced user;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">the real-time updates won’t work. Only hourly update from JIRA to Epicflow will be possible;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">it will bring additional complexity to the configuration of the Epicflow system during import from the perspective of input scope verification.</span></li>
+</ul>
+<p>    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<h2 id="read-rights-only" >Read Rights Only</h2>
+<p><span style="font-weight: 400;">For this approach, you should define only a set of</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">&lt;other group(s)&gt; specially created to define read access to the projects prepared for the import into the Epicflow system.</span></li>
+</ul>
+<p><span style="font-weight: 400;">If you need to use the Epicflow system in the configuration when it doesn’t write anything back to JIRA and has only one-way synchronization from JIRA to Epicflow, please communicate with the Epicflow team to address this issue. A special mode can be activated for such purposes.</span></p>
+    		<div class="hts-messages hts-messages--info  hts-messages--withtitle hts-messages--withicon "   >
+    			<span class="hts-messages__title">Note</span>    			    				<p>
+    					</p>
+<p><span style="font-weight: 400;">The application of this approach, as well as account rights limitation at the JIRA level, are NOT RECOMMENDED since</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">expectation and observation results can be confusing for an inexperienced user;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">the real-time updates won’t work. Only the hour-based update from JIRA to Epicflow is possible;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">it will bring additional complexity to the configuration of the Epicflow system during Import from the perspective of the input scope verification.</span></li>
+</ul>
+<p>    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<p>&nbsp;</p>
+<h1 id="api-tokens" >API Tokens</h1>
+<p><span style="font-weight: 400;">API tokens are a must for JIRA authentication when configuring the connection between Epicflow and JIRA.</span></p>
+<p><span style="font-weight: 400;">For two-step verification, the REST API token must be used.</span></p>
+<h2 id="create-an-api-token" ><b>Create an API Token</b></h2>
+<p><span style="font-weight: 400;">To create an API token</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Log in to your JIRA environment https://&lt;Company_Name&gt;.atlassian.net</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Go to your Profile by selecting the “Profile” option in the context menu that appears when you click on your Account Icon with the left mouse button at the left bottom corner.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Click on the “Atlassian account” link to be redirected to the “Manage your account” page and select the “Security” tab.</span></li>
+</ul>
+<p><img fetchpriority="high" decoding="async" class="aligncenter wp-image-1477" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/11/API-Token-Creation-0.jpg" alt="" width="422" height="442" /></p>
+<p style="text-align: center;"><b><i>Screen #1 – JIRA-API token creation</i></b></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">In the API token chapter, select “Create and manage API tokens” and as soon as you are at “Manage your account” page -&gt; API tokens confirm the token creation by clicking “Create API token” with the left mouse button.</span></li>
+</ul>
+<p><img decoding="async" class="aligncenter wp-image-1478" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/11/API-Token-Creation-1.jpg" alt="" width="529" height="271" /></p>
+<p style="text-align: center;"><b><i>Screen #2 – JIRA-API token creation</i></b></p>
+<p><img decoding="async" class="aligncenter wp-image-1479" src="https://wiki-stage.epicflow.com/wp-content/uploads/2018/11/API-Token-Creation-2.jpg" alt="" width="371" height="235" /></p>
+<p style="text-align: center;"><b><i>Screen #3 – JIRA-API token creation</i></b></p>
+<ul>
+<li><span style="font-weight: 400;">After label identification, your system will grant you a token that will be required for Import.</span></li>
+</ul>
+    		<div class="hts-messages hts-messages--info  hts-messages--withtitle  "   >
+    			<span class="hts-messages__title">Note</span>    			    				<p>
+    					</p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">For security reasons it isn’t possible to view the token after closing the creation dialog; if necessary, create a new token.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">You should store the token securely, just as for any password.</span></li>
+</ul>
+<p>    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<h1 id="jira-scope-filter" >JIRA Scope Filter</h1>
+<p><span style="font-weight: 400;">As a preparation step, you should create a filter (query) in JIRA to define the scope of projects, epics, and tasks defined for the Import itself.</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Log in to the JIRA environment with a previously created account;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Choose the “Issues and filters” JIRA icon;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Select “Search issues”;</span>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">If a basic search is shown instead of an advanced one, click Advanced (near the icon).</span></li>
+</ul>
+</li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Enter your JQL query. As you type, Jira will offer a list of “auto-complete” suggestions based on the context of your query.</span>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Keep in mind that auto-complete suggestions include only the first 15 matches that are displayed alphabetically, so you may need to enter more text if you can’t find a match.</span></li>
+</ul>
+</li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Press Enter or click to run your query. Your search results will display in the issue navigator.</span></li>
+</ul>
+<p><span style="font-weight: 400;">To limit the scope and decrease the load on your system we recommend you to use a query similar to the following one:</span></p>
+<p><i><span style="font-weight: 400;">category = Epicflow AND NOT updatedDate &lt; “YYYY/MM/DD”</span></i></p>
+<p><span style="font-weight: 400;">where “YYYY/MM/DD” defines a period that doesn’t exceed one year.</span></p>
+<p><span style="font-weight: 400;">Please note that the category should be defined and set separately.</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Save your filter by pressing the “Save As” button located over the inserted JQL query.</span>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">If you have used any other account different from that which is going to be applied for the Import you should share your filter with it. For that end,</span>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">go to the Filter list and locate your previously-stored JQL query filter.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">select “Edit filter details” from the context menu to the right in front of the current filter.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;"> share your filter with the required user, group, or project, and save.</span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><span style="font-weight: 400;">For additional information please refer to official JIRA documentation regarding </span><a href="https://confluence.atlassian.com/jirasoftwarecloud/advanced-searching-764478330.html" target="_blank" rel="noopener"><span style="font-weight: 400;">JQL(JIRA Query Language)</span></a><span style="font-weight: 400;">.</span></p>
+<h1 id="first-data-import" ><strong>First </strong><strong>Data </strong><strong>Import</strong></h1>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Before you start, please, verify with your Epicflow System Administrator that your account has the required permissions to access and configure the Import page.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Login into the Epicflow system and navigate to the “Import” menu item, which is located at the bottom part of the left menu column. You’ll be automatically redirected to the Connection configuration page.</span></li>
+</ul>
+<h3 id="connection" ><strong>Connection</strong></h3>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1628" src="https://wiki-stage.epicflow.com/wp-content/uploads/2019/02/JIRA-Import-configuration-1.jpg" alt="" width="1051" height="607" /></p>
+<p style="text-align: center;"><b><i>Screen #4 – JIRA &#8211; Connection</i></b></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">First, you have to specify your Jira Instance, Username, and JIRA token and press the “Next” button.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">As the next step, you have to configure and define Scope and Projects.</span></li>
+</ul>
+<h3 id="scope-and-projects" ><span style="font-weight: 400;"> <strong>Scope and Projects</strong></span></h3>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1629" src="https://wiki-stage.epicflow.com/wp-content/uploads/2019/02/JIRA-Import-configuration-2.jpg" alt="" width="1115" height="929" /></p>
+<p style="text-align: center;"><b><i>Screen #5 – JIRA &#8211; Scope and Projects</i></b></p>
+<p><span style="font-weight: 400;">Below, you can find a description of all settings of this configuration part.</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Jira Scope – select previously created JIRA Scope Filter.</span>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Keep in mind that if you select the “Whole Jira Scope” option, the system will work with the whole set of available data, which is NOT RECOMMENDED. In such a way, you create unnecessary load on the Epicflow and JIRA systems. Even if you would like to import everything from JIRA, it will be better to take the recent year’s data only by creating a special filter to this end. </span></li>
+</ul>
+</li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Project Field Mapping – defines what you would like to have as a project in Epicflow: </span>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Project – each separately created project in JIRA will be imported as a Project to Epicflow;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Epic – each Epic will be presented as a separate project in Epicflow;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Query – each selected query will be defined as a separate project in Epicflow.</span></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">If you put a tick opposite the Automatic Import, the system will automatically import the newly appeared projects from the defined scope if related projects have no shared tasks between projects. Keep in mind that if you have unchecked any Project in the Projects list (despite the automatic import button is on), the project will be imported to the system neither now nor later automatically, unless it’s selected again.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">On pressing the “Expand” text, to the right side from the “Field Mapping” label, Epicflow will expand additional block with the advanced configuration settings. All settings are grouped into the following blocks:</span>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">“Common fields” – defines the set of parameters used for the mapping of appropriate fields in JIRA to particular fields in the Epicflow system. Usually, you don’t need to change them. </span>
+<ul>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">ID</span></i><span style="font-weight: 400;"> – defines which parameter (Key or ID) will be used as a primary ID in Epicflow;</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Name </span></i><span style="font-weight: 400;">– defines the name of the issue which can be either ID or Key or Summary or Description;</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Notes </span></i><span style="font-weight: 400;">– usually, this field contains Description but again you can redefine it accordingly;</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Task Predecessors</span></i><span style="font-weight: 400;"> – defines the type of connection used to define the link between the issue and its predecessor.</span><span style="font-weight: 400;"> By default, it’s “blocks” but a multiple one can be selected if required;</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Tags</span></i><span style="font-weight: 400;"> – only one possible option – “Labels”. It’s used to identify budget tasks;</span></li>
+</ul>
+</li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">“Task Fields” – this block of parameters defines the mapping for values which should be used as Original and Remaining work; </span>
+<ul>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Original Work</span></i><span style="font-weight: 400;"> – Original Estimate is a default setting which shouldn’t be changed;</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Remaining Work</span></i><span style="font-weight: 400;">– Remaining Estimate is a default setting which shouldn’t be changed;</span></li>
+</ul>
+</li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">“Parent field” – here you can define parameters that must be accepted as a Start Date of the Project or End Date;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">“Milestone fields” – additionally to the previous block you can also set milestone parameters;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">“Compound task fields” – if you use multiple assignments for one issue with the identification of different roles required to finish the task you may use this part to configure this relation and work separation between the two defined assignees.</span>
+<ul>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Compound issue type </span></i><span style="font-weight: 400;">– defines the type of an issue (Bug, Sub-task, Task, etc.) which should be processed as a compound task (separated accordingly into two related tasks);</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Second assignment field </span></i><span style="font-weight: 400;">– usually, a QA engineer is defined as the second assignee;</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Work ratio</span></i><span style="font-weight: 400;"> – defines the ratio of work between the first and the second assignee. As a result, the initial estimation will be divided accordingly to the defined value (30, 40, 50, 60 or 80);</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">The first assignment done status</span></i><span style="font-weight: 400;"> – defines the status of an issue when the first assignee has finished their part and the second assignee should be involved;</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Second assignment done status </span></i><span style="font-weight: 400;">– defines the issue status when all work is done and the issue is accomplished;</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">First Assignment prefix</span></i><span style="font-weight: 400;"> is a special prefix that is automatically added to the task name and used to identify the compound task of the first assignee in the Epicflow system;</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">The second Assignment prefix</span></i><span style="font-weight: 400;"> is a special prefix that is automatically added to the task name and used to identify the compound task of the second assignee in the Epicflow system;</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Work</span></i><span style="font-weight: 400;"> – this parameter is used to define the field which is used for  Compound task estimation. It could be either Story points or Task progress or compound issue estimation parameters;</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Time unit</span></i><span style="font-weight: 400;"> is a unit of measure: hours, minutes, or seconds;</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">The second assignment group field </span></i><span style="font-weight: 400;">– if any field is used for the second assignment group identification, you can configure it here;</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Default group for the second assignment</span></i><span style="font-weight: 400;"> – Group name from JIRA which must be used in Epicflow for the second assignment;</span></li>
+</ul>
+</li>
+<li style="font-weight: 400;"><span style="font-weight: 400;"> “Budget fields” – part for budget task configuration. Please refer to the Budget section for additional information on the topic;</span>
+<ul>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Enable budget processing</span></i><span style="font-weight: 400;"> – deselecting this field will switch off the budget processing for the whole list of projects but you can switch it on later in Project Card for a specific project;</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Use ‘relates to’ as a link to budget</span></i><span style="font-weight: 400;"> – apart from specially defined rules on how tasks can be connected to the specific budget task, you can also specify such connection directly by setting up the link of “relates to” type. It can be configured for each project separately in the Project Card.</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Identifier of budget tasks</span></i><span style="font-weight: 400;"> is a key that should be used for budget task identification. It can be also configured for each project separately in the Project Card;</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Budget mark text</span></i><span style="font-weight: 400;"> is a marker for the task to make it more convenient for the end-user for identification. It can be configured for each project separately in the Project Card;</span></li>
+</ul>
+</li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">“Backlog fields” – this part defines work with the backlog and additional configuration of the sprints. All settings can be configured separately for each project in the Project Card.</span>
+<ul>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Import backlog</span></i><span style="font-weight: 400;"> – defines if we should import tasks from the backlog;</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Set default start/end dates for new sprints</span></i><span style="font-weight: 400;"> – will enable automatic calculation of start/end dates for the upcoming inactive sprints in accordance with the below settings.</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Interval between sprints, working days</span></i><span style="font-weight: 400;"> – this parameter is applied for the future automatically calculated sprints.</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Default sprint duration</span></i><span style="font-weight: 400;"> – this parameter is applied for the future automatically calculated sprints.</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Max parallel sprints</span></i><span style="font-weight: 400;"> – the number of sprints that can be started simultaneously.</span></li>
+</ul>
+</li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">“Version as Milestone fields” – allows you to use additional milestones for your projects:</span>
+<ul>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Use a release date as a Milestone</span></i></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Use a start date as a Milestone</span></i></li>
+</ul>
+</li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">“Jira Status fields” – this part helps to define additional business rules of managing the remaining hours for tasks that have been transferred to the “Done” status.</span>
+<ul>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Set remaining to 0 for `Done` tasks</span></i></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Add remaining to spent for ‘Done’ tasks</span></i></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">As soon as Scope and Field Mapping is configured, you can proceed with the refinement of the Project list. By selecting and deselecting projects you can define those which will be imported into the system. Nevertheless this list, as all other settings, can be edited later.</span></li>
+</ul>
+    		<div class="hts-messages hts-messages--info  hts-messages--withtitle hts-messages--withicon "   >
+    			<span class="hts-messages__title">Note</span>    			    				<p>
+    					 <span style="font-weight: 400;">If in the right bottom frame “Projects” you’ll deselect any Project it won’t be imported into the system regardless of any other settings of automatic newly created projects import, etc.</span>    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<h3 id="groups-and-users" ><strong>Groups and Users</strong></h3>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1630" src="https://wiki-stage.epicflow.com/wp-content/uploads/2019/02/JIRA-Import-configuration-3.jpg" alt="" width="1117" height="934" /></p>
+<p style="text-align: center;"><b><i>Screen #6 – JIRA &#8211; Groups and Users</i></b></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">The third step is configuring and defining Groups and Users for the import.</span>
+<ul>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Import Users</span></i><span style="font-weight: 400;"> – Epicflow allows you to choose all users from the Jira system or users from the selected scope of Projects;</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Group assignee </span></i><span style="font-weight: 400;">– defines source of group assignee;</span></li>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Group Field Mapping and Prefix</span></i><span style="font-weight: 400;"> –  allows you to specify the Component and the Prefix which should be used to refine the group list.</span></li>
+</ul>
+</li>
+</ul>
+<p><span style="font-weight: 400;">Closer to the top of the screen, you’ll see the list of Groups with the specified number of Users in the loop and a separate field displaying the names of users and the groups they belong to.</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Review this section to determine the right relation of users to groups and select those that should be imported into Epicflow. Be aware that all deselected users will appear in the unmapped area and you still will be able to take them to the process later.</span></li>
+</ul>
+<p><span style="font-weight: 400;">You can either remove a group relation or add a new one to a specific user by clicking a left mouse button. </span></p>
+<h3 id="completing-import" ><strong>Completing Import</strong></h3>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1631" src="https://wiki-stage.epicflow.com/wp-content/uploads/2019/02/JIRA-Import-configuration-4.jpg" alt="" width="1130" height="937" /></p>
+<p style="text-align: center;"><b><i>Screen #7 – JIRA &#8211; Finalize Import</i></b></p>
+<ul>
+<li><span style="font-weight: 400;">Now, as long as everything is configured correctly, you can complete the import with a left mouse click on the “Import” button. Be aware that even that this action <strong>cannot be undone Import settings can be reconfigured later if needed. </strong></span></li>
+</ul>
+    		<div class="hts-messages hts-messages--info  hts-messages--withtitle hts-messages--withicon "   >
+    			<span class="hts-messages__title">Note</span>    			    				<p>
+    					</p>
+<p><span style="font-weight: 400;">If your system uses the principle of a web-hook, then the changes made in the Jira environment will be applied immediately in both directions. If not, data synchronization between environments will be performed automatically once per hour.</span></p>
+<p>    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<p><span style="font-weight: 400;">Having imported your Jira data into the Epicflow system, you’ll be redirected to the Pipeline page with all projects imported into the system.</span></p>
+<h1 id="second-import-configuration" >Second Import Configuration</h1>
+<p><span style="font-weight: 400;">If your system was previously configured to connect with different JIRA instances you’ll see a list of these connections as soon as you visit the Import page. </span></p>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1635" src="https://wiki-stage.epicflow.com/wp-content/uploads/2019/02/JIRA-Import-configuration-5.jpg" alt="" width="1217" height="232" /></p>
+<p style="text-align: center;"><b><i>Screen #8 – JIRA-import Connections list</i></b></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">To create a new connection to the external JIRA system, press the “New connection” button. As a result, you’ll be automatically redirected to the Connection configuration page. All you need to do is to cover all steps as during First Import Configuration described above.</span></li>
+</ul>
+    		<div class="hts-messages hts-messages--info  hts-messages--withtitle hts-messages--withicon "   >
+    			<span class="hts-messages__title">Note</span>    			    				<p>
+    					<span style="font-weight: 400;">Epicflow system doesn’t allow multiple connection to one instance. Only one connection per instance.</span>    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<h1 id="editing-connection" >Editing Connection</h1>
+<p><span style="font-weight: 400;">To edit any previously created connection, take the following steps:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Go to the Import page;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">In the context menu, choose the “Edit” option as shown in the screenshot below. As a result, you’ll be redirected to the Connection Configuration page.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">You’ll be able to edit configuration after you take all steps and click the “Import” button.</span></li>
+</ul>
+<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1637" src="https://wiki-stage.epicflow.com/wp-content/uploads/2019/02/JIRA-Import-configuration-7.jpg" alt="" width="1224" height="239" /></p>
+<p style="text-align: center;"><b><i>Screen #8 – JIRA-import Edit Connection</i></b></p>
+<p><span style="font-weight: 400;">The system will allow you to specify new rules and add projects you’d like to import OR remove an established connection from the list. At the end, you’ll be asked to confirm your actions, and if you approve all changes will be implemented.</span></p>
+<h1 id="deleting-connection" >Deleting Connection</h1>
+<p><span style="font-weight: 400;">To delete any previously created connection, you would need to follow these steps:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Go to the Import page;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">In the context menu, choose the “Delete” option as shown in the screenshot below and confirm your action;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">As soon as you confirm it, the connection link will be removed as well as all projects related to it with the corresponding resource pool and mapping links. Nevertheless, internal Epicflow users and groups will remain.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Repeat Connection configuration will be treated by the system as a new one and no historical or configuration data will be restored.</span></li>
+</ul>
+<h1 id="data-optimization" >Data Optimization</h1>
+<p><span style="font-weight: 400;">To optimize Epicflow output and bring it closer to JIRA, you’ll have to complete the following steps:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">As a first step, make some efforts in verifying your data in Jira.</span></li>
+</ul>
+<p><span style="font-weight: 400;">It includes:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Tasks and their dependency network verification; </span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">A rough time and cost estimate of each task;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Resource groups assigned to complete each task or Components identification for each task;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Projects, epics and versions deadlines where applicable;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Creating a separate account for JIRA integration;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Providing access to the created account for a required scope of projects;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">(Optional) If you would like to have Epicflow updated in the real-time mode also add the account to the “administrators” and “site-admins” groups. Otherwise, JIRA to Epicflow update will be done on an hourly basis.</span></li>
+</ul>
+    		<div class="hts-messages hts-messages--info  hts-messages--withtitle hts-messages--withicon "   >
+    			<span class="hts-messages__title">Note</span>    			    				<p>
+    					</p>
+<p><span style="font-weight: 400;">An appropriate set of rights is required for the webhook configuration by the Epicflow system. As soon as you finish import configuration you can remove the account from the  “administrators” and “site-admins” groups but be aware that in case of any scope changes and Epicflow import reconfiguration you will need to add them back. Otherwise, on Import reconfiguration no changes to webhooks will be applied.</span></p>
+<p>    				</p>
+    			    			
+    		</div><!-- /.ht-shortcodes-messages -->
+    		
+<p>&nbsp;</p>
+<h1 id="epicflow-and-jira-hours-correlation" >Epicflow and JIRA Hours Correlation</h1>
+<p><span style="font-weight: 400;">Please, remember the difference in the interfaces of these two systems. However, the flexibility of our product allows them to interact effectively. Consider the following rules:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Remaining in Epicflow is equal to the “remaining estimate” in Jira.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Total in Epicflow is equal to the “original estimate” in Jira.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Spent in Epicflow is calculated as total minus the remaining from Jira.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Logged work is not synchronized from Jira so Epicflow doesn’t use logged work value directly.</span></li>
+</ul>
+<p><span style="font-weight: 400;">If you log hours in Jira it will reduce the remaining estimate of the issue, so it will be shown in Epicflow as updated remaining (and updated spent value).</span></p>
+
+				
+			</div>
+
+							<div class="hkb-article__lastupdated" itemprop="dateModified">
+					Updated on July 28, 2020				</div>
+			
+			
+
+
+			
+<div class="hkb-article-tags">
+	</div>
+
+			
+<div class="hkb-feedback">
+	<span class="hkb-feedback__title">Was this article helpful?</span>
+					<div class="ht-voting" id ="ht-voting-post-188">
+								
+			
+<div class="ht-voting-links ht-voting-none">
+	<a class="ht-voting-upvote enabled" rel="nofollow" role="button" data-direction="up" data-type="post" data-nonce="7c28d80bdd" data-id="188" data-allow="1" data-display="standard" href="#">
+		<i class="hkb-upvote-icon"></i>
+		<span>Yes</span>
+	</a>
+	<a class="ht-voting-downvote enabled" rel="nofollow" role="button" data-direction="down" data-type="post" data-nonce="7c28d80bdd" data-id="188" data-allow="1" data-display="standard" href="#">
+		<i class="hkb-upvote-icon"></i>
+		<span>No</span>
+	</a>
+</div>
+	<!-- no new vote -->
+
+							</div>
+			</div>
+			
+							
+
+<!-- .hkb-article__related -->     
+	<section class="hkb-article-related">
+		<h3 class="hkb-article-related__title">Related Articles</h3>
+		<ul class="hkb-article-list">
+		
+			<li class="hkb-article-list__format-standard">
+				<a href="https://wiki-stage.epicflow.com/knowledge-base/data-export/">Report Export</a>
+			</li>
+
+		
+			<li class="hkb-article-list__format-standard">
+				<a href="https://wiki-stage.epicflow.com/knowledge-base/manage-tasks-in-jira/">Managing Tasks in JIRA</a>
+			</li>
+
+		
+			<li class="hkb-article-list__format-standard">
+				<a href="https://wiki-stage.epicflow.com/knowledge-base/step-by-step-integration-with-csv-project/">Step By Step Integration with CSV Project</a>
+			</li>
+
+		
+			<li class="hkb-article-list__format-standard">
+				<a href="https://wiki-stage.epicflow.com/knowledge-base/how-to-step-by-step/">Step By Step integration with MS Project</a>
+			</li>
+
+		
+			<li class="hkb-article-list__format-standard">
+				<a href="https://wiki-stage.epicflow.com/knowledge-base/automatic-report-generator/">Automatic Report Generator</a>
+			</li>
+
+		
+			<li class="hkb-article-list__format-standard">
+				<a href="https://wiki-stage.epicflow.com/knowledge-base/excel-to-odbc/">Excel to ODBC</a>
+			</li>
+
+				</ul>
+	</section>
+<!-- /.hkb-article__related -->
+
+			
+			
+		</article>
+
+		
+		</div>
+
+	
+	
+</div>
+</div>
+
+<!-- .site-footer -->
+<footer class="site-footer" itemscope itemtype="https://schema.org/WPFooter">
+<div class="ht-container">
+
+					<nav class="nav-footer">
+			<div class="menu-navigation-menu-container"><ul id="menu-navigation-menu-1" class=""><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-313"><a href="/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-302"><a href="https://wiki-stage.epicflow.com/release-notes/">Release Notes</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="https://wiki-stage.epicflow.com/faq/">FAQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-342"><a href="https://wiki-stage.epicflow.com/documentation/">Docs and Media</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1466"><a href="https://wiki-stage.epicflow.com/downloads/">Downloads</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-318"><a href="https://wiki-stage.epicflow.com/contact-us/">Contact Us</a></li>
+</ul></div>		</nav>
+	
+</div>
+</footer> 
+<!-- /.site-footer -->
+
+
+<style type="text/css">
+<!--
+
+
+
+#goog-gt-tt,
+.goog-tooltip,
+.goog-tooltip:hover {
+	display: none !important;
+}
+.goog-text-highlight {
+	background-color: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+.translated-rtl font,
+.translated-ltr font {
+	background-color: transparent !important;
+	box-shadow: none !important;
+	box-sizing: border-box !important;
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+}
+
+-->
+</style>
+
+
+
+
+<script type="text/javascript">
+/*<![CDATA[*/
+function initializeGoogleTranslateElement() {
+	new google.translate.TranslateElement({
+		autoDisplay: false,
+		pageLanguage: "en",
+		floatPosition: google.translate.TranslateElement.FloatPosition.TOP_RIGHT
+	});
+}
+/*]]>*/
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=initializeGoogleTranslateElement"></script><script type="text/javascript" id="ht-kb-frontend-scripts-js-extra">
+/* <![CDATA[ */
+var voting = {"ajaxurl":"https:\/\/wiki-stage.epicflow.com\/wp-admin\/admin-ajax.php","ajaxnonce":"492877fa01"};
+var hkbJSSettings = {"liveSearchUrl":"https:\/\/wiki-stage.epicflow.com?ajax=1&ht-kb-search=1&s=","focusSearchBox":"","keepTypingPrompt":"<ul id=\"hkb\" class=\"hkb-searchresults\" role=\"listbox\"><li class=\"hkb-searchresults__noresults\" role=\"option\"><span>Keep typing for live search results<\/span> <\/li><\/ul>","triggerLength":"3"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/ht-knowledge-base/dist/ht-kb-frontend.min.js?ver=3.15.0" id="ht-kb-frontend-scripts-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/ht-shortcodes/modules/messages/ht-shortcodes-messages-frontend.js?ver=1.0" id="ht-shortcodes-messages-frontend-script-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/heroic-glossary/dist/ht-glossary-frontend.js?ver=350" id="htgb-custom-js-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/heroic-blocks/dist/js/ht-blocks-frontend.js?ver=1721715670" id="ht-blocks-frontend-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/heroic-table-of-contents/dist/script.min.js?ver=1721715670" id="ht_toc-script-js-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/themes/knowall/js/js.min.js?ver=6.6.1" id="ht_theme_js-js"></script>
+<script type="text/javascript" id="scrollspy-js-extra">
+/* <![CDATA[ */
+var scrollspyCustomValues = {"offset":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/themes/knowall/js/scrollspy.js?ver=6.6.1" id="scrollspy-js"></script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-includes/js/comment-reply.min.js?ver=6.6.1" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="hkb-toc-scrollspy-js-extra">
+/* <![CDATA[ */
+var hkbTOCSettings = {"htTOCWidgetScollspyViewOffset":"0"};
+var hkbTOCSettings = {"htTOCWidgetScollspyViewOffset":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://wiki-stage.epicflow.com/wp-content/plugins/ht-knowledge-base/js/hkb-toc-scrollspy.min.js?ver=3.15.0" id="hkb-toc-scrollspy-js"></script>
+
+</div>
+<!-- /.ht-site-container -->
+</body>
+</html>
